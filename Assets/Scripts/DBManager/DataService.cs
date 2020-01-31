@@ -64,8 +64,7 @@ public class DataService
         _connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
  
         Debug.Log("Final PATH: " + dbPath);
-        Debug.Log("Obteniendo preguntas");
-       
+             
     }
 
     public IEnumerable<Pregunta> Refpreguntas { get; set; }
@@ -98,17 +97,20 @@ public class DataService
     {
         return _connection.Table<Imagen>();
     }
-    public IEnumerable<Nivel> GetNiveles()
+    public IEnumerable<Sentence> GetNiveles()
     {
-        return _connection.Table<Nivel>();
+
+        return _connection.Table<Sentence>();
+
+       
     }
 
+ 
     private IEnumerable<Pregunta> GetRefPreguntas()
     {
         return _connection.Table<Pregunta>();
     }
-
-    public List<Pregunta> GetPreguntasbyNivel(int nivel) {
+   public List<Pregunta> GetPreguntasbyNivel(int nivel) {
        List<Pregunta> preguntas = new List<Pregunta>();
        foreach (Pregunta p in Refpreguntas)
        {

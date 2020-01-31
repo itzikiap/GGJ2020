@@ -7,9 +7,7 @@ public class DBConnector
   
     public DBConnector()
     {
-       ds = new DataService("iswdb.db");
-       ds.inicializarPreguntasSalvas();
-
+       ds = new DataService("ggj2020.db");
     }
 
     public Save GetLastSave()
