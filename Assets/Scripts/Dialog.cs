@@ -13,10 +13,13 @@ public class Dialog : MonoBehaviour
     public string[] sentences;
 
 
+    private List<GameObject> alreadyshowed;
+
     private bool speakingFirst = true;
 
     private void Start()
     {
+        alreadyshowed = new List<GameObject>();
         StartCoroutine(showSentences());
     }
 
@@ -25,6 +28,7 @@ public class Dialog : MonoBehaviour
         Debug.Log("Showing sentences");
         foreach(string sentence in sentences)
         {
+            moveUp();
             if (speakingFirst)
             {
                 addSentenceMale(sentence);
@@ -37,10 +41,23 @@ public class Dialog : MonoBehaviour
                 Debug.Log("Showing sentences"+sentence);
                 speakingFirst = true;
             }
+           
             yield return new WaitForSeconds(1f);
         }
 
        
+    }
+
+    [SerializeField]
+    private int upSteps;
+
+    public void moveUp()
+    {
+        foreach (GameObject go in alreadyshowed)
+        {
+            Vector3 old = go.GetComponent<RectTransform>().localPosition;
+            go.GetComponent<RectTransform>().localPosition = new Vector3(old.x, old.y + upSteps, old.z);               
+        }
     }
 
     int last_y = -100;
@@ -49,17 +66,19 @@ public class Dialog : MonoBehaviour
     {
         GameObject dialog = Instantiate(FemaleDialog, Vector3.zero, Quaternion.identity) as GameObject;
         dialog.transform.SetParent(transform);
-        dialog.GetComponent<RectTransform>().localPosition = new Vector3(-100, last_y + 80, 0);
+        dialog.GetComponent<RectTransform>().localPosition = new Vector3(-100, -130, 0);
         dialog.GetComponent<RectTransform>().localScale = new Vector3(2.5f, 5, 1);
         dialog.GetComponentInChildren<TextMeshProUGUI>().text = s;
+        alreadyshowed.Add(dialog);
     }
     public void addSentenceMale(string s)
     {
         GameObject dialog = Instantiate(MaleDialog, Vector3.zero, Quaternion.identity) as GameObject;
         dialog.transform.SetParent(transform);
-        dialog.GetComponent<RectTransform>().localPosition = new Vector3(100, last_y + 80, 0);
+        dialog.GetComponent<RectTransform>().localPosition = new Vector3(100, -130, 0);
         dialog.GetComponent<RectTransform>().localScale = new Vector3(2.5f, 5, 1);
         dialog.GetComponentInChildren<TextMeshProUGUI>().text = s;
+        alreadyshowed.Add(dialog);
     }
 }
 
