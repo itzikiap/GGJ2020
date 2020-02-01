@@ -31,7 +31,7 @@ public class ConversationManager : MonoBehaviour, IConversationManager
 
     }
     public Sentence[] GetConversationChain(int Count) {
-
+       
     }
     public Sentence[] GetOptionalNextSentences() {
         
