@@ -38,7 +38,7 @@
       "tone": 0,
       "speaker": 2,
       "nextOptionsIds": [4],
-      "hasKeysIds": [8]
+      "hasKeysIds": []
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "tone": 0,
       "speaker": 2,
       "nextOptionsIds": [26],
-      "hasKeysIds": []
+      "hasKeysIds": [8]
     },
     {
       "id": 5,
