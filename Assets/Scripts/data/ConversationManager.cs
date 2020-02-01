@@ -83,7 +83,7 @@ public class ConversationManager : IConversationManager
         List<Sentence> chain = new List<Sentence>();
         foreach (int id in link.nextOptionsIds) {
             Sentence found = FindSentenceById(id);
-            if (found.unlockedByKeyId == -1 || Array.Find(ObtainedKeys, key => found.unlockedByKeyId == key.id) != null) {
+            if (found.unlockedByKeyId == -1 || Array.Find(ObtainedKeys.ToArray(), (Key key) => found.unlockedByKeyId == key.id) != null) {
                 chain.Add(found);
             }
         }
@@ -107,13 +107,13 @@ public class ConversationManager : IConversationManager
     public void AddKeysIds(int[] keysIds) {
         foreach(int k in keysIds) {
             Key found = Array.Find(this.conversation.keys, (Key key) => k == key.id);
-            if (Found != null && !Array.Find(this.ObtainedKeys.ToArray(), (Key key) => found.id == key.id)) {
+            if (found != null && Array.Find(this.ObtainedKeys.ToArray(), (Key key) => found.id == key.id) != null) {
                 this.ObtainedKeys.Add(found);
             }
         }
     }
     public Key[] GetObtainedKeys() {
-        return this.ObtainedKeys;
+        return this.ObtainedKeys.ToArray();
     }
 
     public void ChangeActiveOption(int index) {
