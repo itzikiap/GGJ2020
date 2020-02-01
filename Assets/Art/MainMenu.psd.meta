@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: d9ed431be39197e4a9a0c6a13261c0ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9101325491194003226
+    second: Fixer_Game_MainMenu_0
+  - first:
+      213: 4729476161431873866
+    second: NormalButton
+  - first:
+      213: 1607281814035422166
+    second: Fixer_Game_MainMenu_2
+  - first:
+      213: -1784993483985594202
+    second: Fixer_Game_MainMenu_3
+  - first:
+      213: -4884860854290820865
+    second: Fixer_Game_MainMenu_4
+  - first:
+      213: -1410172924995528206
+    second: Fixer_Game_MainMenu_5
+  - first:
+      213: -1770097651549738116
+    second: Fixer_Game_MainMenu_6
+  - first:
+      213: -8293060342012292108
+    second: Fixer_Game_MainMenu_7
+  - first:
+      213: 2050048818527191371
+    second: OverButton
+  - first:
+      213: 3816973150012172846
+    second: PressedButton
+  - first:
+      213: -2324073708521366363
+    second: Dialogues
+  - first:
+      213: -3398602620929012793
+    second: Fixer_Game_MainMenu_11
+  - first:
+      213: -5213257149862931273
+    second: Fixer_Game_MainMenu_12
+  - first:
+      213: -270473867550313605
+    second: Fixer_Game_MainMenu_13
+  - first:
+      213: -7328655659705733401
+    second: Fixer_Game_MainMenu_14
+  - first:
+      213: -5133956831678570436
+    second: Fixer_Game_MainMenu_15
+  - first:
+      213: 594763546025830389
+    second: Fixer_Game_MainMenu_16
+  - first:
+      213: 1936299006725207514
+    second: Fixer_Game_MainMenu_17
+  - first:
+      213: 4089543776249750290
+    second: Fixer_Game_MainMenu_18
+  - first:
+      213: -1701468942549100711
+    second: Fixer_Game_MainMenu_19
+  - first:
+      213: 8235835288456139735
+    second: Fixer_Game_MainMenu_20
+  - first:
+      213: -8846696248542400465
+    second: Fixer_Game_MainMenu_21
+  - first:
+      213: 4935008307624565170
+    second: Fixer_Game_MainMenu_22
+  - first:
+      213: 2510854833349638313
+    second: Fixer_Game_MainMenu_23
+  - first:
+      213: -7596381705791729034
+    second: Fixer_Game_MainMenu_24
+  - first:
+      213: 475301540537571925
+    second: Fixer_Game_MainMenu_25
+  - first:
+      213: -3349526911032140175
+    second: Fixer_Game_MainMenu_26
+  - first:
+      213: -2761753839263120615
+    second: Dialogues
+  - first:
+      213: 8051373979824244224
+    second: Credits
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 842
+        height: 596
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f73d730576e4e70800000000000000
+      internalID: 9101325491194003226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalButton
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 472
+        width: 232
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4923dfc28972a140800000000000000
+      internalID: 4729476161431873866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_2
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 517
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbd68b4b463e4610800000000000000
+      internalID: 1607281814035422166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_3
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 517
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8d6a432ed6a37e0800000000000000
+      internalID: -1784993483985594202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_4
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 517
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0d8c22fec753cb0800000000000000
+      internalID: -4884860854290820865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_5
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 517
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f994c5323f0e6ce0800000000000000
+      internalID: -1410172924995528206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_6
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 517
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bef9570995f67e0800000000000000
+      internalID: -1770097651549738116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_7
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 517
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f35a75be8129ec80800000000000000
+      internalID: -8293060342012292108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OverButton
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 360
+        width: 232
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41c580f98c337c10800000000000000
+      internalID: 2050048818527191371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PressedButton
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 248
+        width: 232
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2aeda35bdc98f430800000000000000
+      internalID: 3816973150012172846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dialogues
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 17
+        width: 540
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac52cb864b3fbfd0800000000000000
+      internalID: -2324073708521366363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_11
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 105
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb80de3cecb5d0d0800000000000000
+      internalID: -3398602620929012793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_12
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 105
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b497a34e3ac6a7b0800000000000000
+      internalID: -5213257149862931273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_13
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 105
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7333a353751f3cf0800000000000000
+      internalID: -270473867550313605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_14
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 105
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee6512a1826b4a90800000000000000
+      internalID: -7328655659705733401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_15
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 102
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30eb93667580c8b0800000000000000
+      internalID: -5133956831678570436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_16
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 105
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7a83e3b46014800800000000000000
+      internalID: 594763546025830389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 105
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad53cca00bd1fda10800000000000000
+      internalID: 1936299006725207514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_18
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 106
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213a6cca56af0c830800000000000000
+      internalID: 4089543776249750290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_19
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 105
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9575003f20b2368e0800000000000000
+      internalID: -1701468942549100711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_20
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 105
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d31e0d3f809b4270800000000000000
+      internalID: 8235835288456139735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_21
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 106
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2079dd32a83a3580800000000000000
+      internalID: -8846696248542400465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_22
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 106
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b95093b8ebac7440800000000000000
+      internalID: 4935008307624565170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_23
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 106
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8b068fa2958d220800000000000000
+      internalID: 2510854833349638313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_24
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 102
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6721200061b349690800000000000000
+      internalID: -7596381705791729034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_25
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 105
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a10fc9b3c989600800000000000000
+      internalID: 475301540537571925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_26
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 105
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e515e55071481d0800000000000000
+      internalID: -3349526911032140175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixer_Game_MainMenu_10
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 102
+        width: 237
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91386adf3874ca9d0800000000000000
+      internalID: -2761753839263120615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Credits
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 100
+        width: 242
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0064f350af93cbf60800000000000000
+      internalID: 8051373979824244224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d14f7b52788d4624294fcdd73eec87d5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
