@@ -29,6 +29,28 @@ public class GameManager : MonoBehaviour
         CallShowDialogsEvent();
     }
 
+    void Update () {
+        if(Input.GetKeyDown(KeyCode.A)){
+            this.cm.SeekBy(-1);
+        }
+        else if(Input.GetKeyDown(KeyCode.D)){
+            this.cm.SeekBy(1);
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha1)){
+            this.cm.ChangeActiveOption(0);
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha2)){
+            this.cm.ChangeActiveOption(1);
+        } else if(Input.GetKeyDown(KeyCode.Alpha3)){
+            this.cm.ChangeActiveOption(2);
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha4)){
+            this.cm.ChangeActiveOption(3);
+        }
+
+        this.CallScrollEvent();
+    }
+
     public void CallExitGameEvent()
     {
         ExitGameEvent?.Invoke();

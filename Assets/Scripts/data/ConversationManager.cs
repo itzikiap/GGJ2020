@@ -71,7 +71,7 @@ public class ConversationManager : IConversationManager
             link = FindSentenceById(nextId);
             leaf = IsSentenceLeaf(link);
             // Debug.Log(i+ "," + count+ "," + leaf+ "," + JsonUtility.ToJson(link));
-            nextId = link.nextOptionsIds[link.activeIndex];
+            if (!leaf) nextId = link.nextOptionsIds[link.activeIndex];
             chain.Add(link);
             i ++;
         }

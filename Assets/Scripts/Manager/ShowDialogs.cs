@@ -33,6 +33,7 @@ public class ShowDialogs : MonoBehaviour
         gameManagerRef = GetComponent<GameManager>();
         cm = gameManagerRef.conversationManager;
         gameManagerRef.ShowDialogsEvent += initialize; 
+        gameManagerRef.ScrollEvent += showSentences;
     }
     public void OnDisable()
     {
@@ -51,8 +52,6 @@ public class ShowDialogs : MonoBehaviour
 
         foreach(Sentence s in cm.GetConversationChain(FIRST_NUMBER_FETCH))
         {
-            Debug.Log( "," + JsonUtility.ToJson(s));
-
             if(s.speaker == 0) {
                 addSentenceSpeaker(s.text);
             }else if(s.speaker == 1)
