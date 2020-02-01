@@ -11,10 +11,11 @@ public class ConversationManager : IConversationManager
     string jsonRawData;
     int currentIndex;
     Sentence currentSentence;
-    Key[] ObtainedKeys;
+    List<Key> ObtainedKeys;
     DialogData conversation;
     public ConversationManager() {
         path = Application.streamingAssetsPath;
+        this.ObtainedKeys = new List<Key>();
         LoadConversationFromFile("conversation.json");        
     }
 
@@ -48,7 +49,7 @@ public class ConversationManager : IConversationManager
     public void LoadConversationFromFile(string conversationFileName) {
         jsonRawData = File.ReadAllText(path + '/' + conversationFileName);
         conversation = JsonUtility.FromJson<DialogData>(jsonRawData);
-       Debug.Log(JsonUtility.ToJson(conversation));
+    //    Debug.Log(JsonUtility.ToJson(conversation));
         SeekTo(0);
     }
     public int GetIndex() {
@@ -103,6 +104,18 @@ public class ConversationManager : IConversationManager
     public void SeekBy(int steps) {
         SeekTo(currentIndex + steps);
     }
+    public void AddKeysIds(int[] keysIds) {
+        foreach(int k in keysIds) {
+            Key found = Array.Find(this.conversation.keys, (Key key) => k == key.id);
+            if (Found != null && !Array.Find(this.ObtainedKeys.ToArray(), (Key key) => found.id == key.id)) {
+                this.ObtainedKeys.Add(found);
+            }
+        }
+    }
+    public Key[] GetObtainedKeys() {
+        return this.ObtainedKeys;
+    }
+
     public void ChangeActiveOption(int index) {
         currentSentence.activeIndex = index;
     }

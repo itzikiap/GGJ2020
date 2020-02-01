@@ -29,7 +29,6 @@ public interface IConversationManager {
      * Return a list with sentences without a key, or with an obtained key
      */
     Sentence[] GetOptionalNextSentences();
-    
     /**
      *  Return true if current sentence by the tracking index is a leaf
      * I.E Don't have any Next Options (Not even hidden by key)
@@ -47,6 +46,14 @@ public interface IConversationManager {
      * and folowwing the path of "activeOption"
      */
     void SeekBy(int Steps);
+    /**
+     * Add Key Ids to the inventory of keys
+     */
+    void AddKeysIds(int[] keysIds);
+    /**
+     * Get all the keys ackired by now
+     */
+    Key[] GetObtainedKeys();
     /**
      * Change the active option of the current Sentence.
      * After this, the sentence list needs to reload using "GetConversationChain"

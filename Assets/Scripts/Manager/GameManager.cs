@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public event GameManagerEventHandler ScrollEvent;//simulates the scrolling in the timeline
     public event GameManagerEventHandler ShowKeysEvent;//shows all the keys available for the current dot
     public event GameManagerEventHandler ChangeOptionEvent;//changes another option
-    public event GameManagerEventHandler AdquireKeyEvent;//when the user gets to a sentence that has a key
+    public event GameManagerEventHandler ObtainedKeysEvent;//when the user gets to a sentence that has a key
     public event GameManagerEventHandler PauseEventEvent;
         
     private ConversationManager cm;
@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     void Update () {
         if(Input.GetKeyDown(KeyCode.A)){
             this.cm.SeekBy(-1);
+            this.CheckForKey();
         }
         else if(Input.GetKeyDown(KeyCode.D)){
             this.cm.SeekBy(1);
@@ -41,7 +42,8 @@ public class GameManager : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2)){
             this.cm.ChangeActiveOption(1);
-        } else if(Input.GetKeyDown(KeyCode.Alpha3)){
+        } 
+        else if(Input.GetKeyDown(KeyCode.Alpha3)){
             this.cm.ChangeActiveOption(2);
         }
         else if(Input.GetKeyDown(KeyCode.Alpha4)){
@@ -49,6 +51,13 @@ public class GameManager : MonoBehaviour
         }
 
         this.CallScrollEvent();
+    }
+
+    private void CheckForKey() {
+        if (this.cm.GetCurrentSentence().hasKeysIds.Length > 0) {
+            this.cm.AddKeysIds(this.cm.GetCurrentSentence().hasKeysIds);
+        }
+        this.CallObtainedKeysEvent();
     }
 
     public void CallExitGameEvent()
@@ -71,9 +80,9 @@ public class GameManager : MonoBehaviour
     {
         ChangeOptionEvent?.Invoke();
     }
-    public void CallAcquireKeyEvent() 
+    public void CallObtainedKeysEvent() 
     {
-        AdquireKeyEvent?.Invoke();
+        ObtainedKeysEvent?.Invoke();
     }
 
 
