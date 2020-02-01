@@ -51,7 +51,6 @@ public class ConversationManager : IConversationManager
 //        Debug.Log(JsonUtility.ToJson(conversation));
         SeekTo(0);
         Sentence[] chain = GetConversationChain(5000000);
-        Debug.Log("chain: "+ JsonUtility.ToJson(chain));
     }
     public int GetIndex() {
         return currentIndex;
@@ -76,8 +75,7 @@ public class ConversationManager : IConversationManager
             chain.Add(link);
             i ++;
         }
-        Debug.Log("BEFORE chain: "+ JsonUtility.ToJson(chain));
-
+    
         return chain.ToArray();
     }
     public Sentence[] GetOptionalNextSentences() {
