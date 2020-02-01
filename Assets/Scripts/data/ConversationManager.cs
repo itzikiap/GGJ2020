@@ -22,8 +22,8 @@ public class ConversationManager : MonoBehaviour, IConversationManager
     // ----------- INTERFACE METHODS --------
     public void LoadConversationFromFile(string conversationFileName) {
         jsonRawData = File.ReadAllText(path + '/' + conversationFileName);
-        conversation = JSONUtility.FromJson<DialogData>(jsonRawData);
-        Debug.log(conversation);
+        conversation = JsonUtility.FromJson<DialogData>(jsonRawData);
+        Debug.Log(conversation);
     }
     public int GetIndex() {
         return 0;
@@ -35,10 +35,10 @@ public class ConversationManager : MonoBehaviour, IConversationManager
         return null;
     }
     public Sentence[] GetConversationChain(int Count) {
-        return new Sentence[];
+        return new Sentence[0];
     }
     public Sentence[] GetOptionalNextSentences() {
-        return new Sentence[];
+        return new Sentence[0];
     }
     public void SeekTo(int Index) {
 
