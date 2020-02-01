@@ -21,7 +21,7 @@
       "text": "Is that so? Then how do you explain all the fighting you and mom had the last few months?",
       "tone": 0,
       "speaker": 2,
-      "nextOptionsIds": [2,15,20],
+      "nextOptionsIds": [2,15,20, 41],
       "hasKeysIds": []
     },
     {
@@ -62,9 +62,10 @@
       "text": "That was during the summer vacation in Italy, right?",
       "tone": 0,
       "speaker": 1,
-      "nextOptionsIds": [7],
+      "nextOptionsIds": [7, 45],
       "hasKeysIds": []
     },
+
     {
       "id": 7,
       "text": "Yes... . And after that mom was stuffing us with pasta every weekend. You hated it.",
@@ -339,6 +340,56 @@
       "speaker": 0,
       "nextOptionsIds": [],
       "hasKeysIds": []
+    },
+
+    {
+      "id": 41,
+      "text": "There's something I have to share with you! It's super secret...",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [42],
+      "hasKeysIds": [],
+      "unlockedByKey": 7
+    },
+    {
+      "id": 42,
+      "text": "What is it now?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [43],
+      "hasKeysIds": []
+    },
+    {
+      "id": 43,
+      "text": "I'm a lizard!",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [44],
+      "hasKeysIds": []
+    },
+    {
+      "id": 44,
+      "text": "Ah well, that was unexpected. I have to concede it doesn't make much sense.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    },
+    {
+      "id": 45,
+      "text": "No. Back in the war, when the lizards hunted us.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [46],
+      "hasKeysIds": [8],
+      "unlockedByKey" : 5
+    },
+    {
+      "id": 46,
+      "text": "Oopsie.. Might be a slip up in the fabric of reality. Nothing we can't fix though.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": []
     }
   ],
   "keys" : [
@@ -380,6 +431,11 @@
     {
       "id" : 7,
       "text": "Real Dad",
+      "tone": 0
+    },
+    {
+      "id" : 8,
+      "text": "Lizard",
       "tone": 0
     }
   ]
