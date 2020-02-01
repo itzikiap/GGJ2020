@@ -1,31 +1,36 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using UnityEngine;
 
-public class ConversationManager : IConversationManager
+public class ConversationManager : MonoBehaviour, IConversationManager
 {
-    Conversation conversation;
+    string path;
+    string jsonRawData;
     int currentIndex;
     Sentence currentSentence;
     Key[] ObtainedKeys;
     public ConversationManager() {
-
+        path = Application.streamingAssetsPath;
+        LoadConversationFromFile("dialogs.json");
     }
 
-    void ConstructConversation(Sentence[] sentenceList, ConversationNode tree) {
+    void ConstructConversation(Sentence[] sentenceList) {
         
     }
 
     // ----------- INTERFACE METHODS --------
     public void LoadConversationFromFile(string conversationFileName) {
-
+        
     }
     public int GetIndex() {
 
     }
-    public Sentance GetCurrentSentence() {
+    public bool IsCurrentIndexLeaf() {
 
     }
-    public Sentance[] GetConversationChain(int Count) {
+    public Sentence GetCurrentSentence() {
+
+    }
+    public Sentence[] GetConversationChain(int Count) {
 
     }
     public Sentence[] GetOptionalNextSentences() {

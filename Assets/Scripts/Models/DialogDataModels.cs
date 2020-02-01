@@ -26,7 +26,7 @@ public class Sentence {
     int[] nextOptionsIds;
 
     // These definitions will be filled by the class
-    Sentance previous;
+    Sentence previous;
     Sentence[] nextOptions;
     int activeIndex;
 }
