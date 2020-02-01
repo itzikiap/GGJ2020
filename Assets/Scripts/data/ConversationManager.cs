@@ -66,17 +66,15 @@ public class ConversationManager : IConversationManager
 
         bool leaf = false;
         int i = 0;
-        Debug.Log(",ssssss " + JsonUtility.ToJson(link));
-        chain.Add(link);
+        int nextId = link.id;
         while (i < count && !leaf) {
-            link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
+            link = FindSentenceById(nextId);
             leaf = IsSentenceLeaf(link);
-            Debug.Log(i+ "," + count+ "," + leaf+ "," + JsonUtility.ToJson(link));
+            // Debug.Log(i+ "," + count+ "," + leaf+ "," + JsonUtility.ToJson(link));
+            nextId = link.nextOptionsIds[link.activeIndex];
             chain.Add(link);
             i ++;
         }
-        Debug.Log("Chain: " + JsonUtility.ToJson(chain.Count));
-    
         return chain.ToArray();
     }
     public Sentence[] GetOptionalNextSentences() {
