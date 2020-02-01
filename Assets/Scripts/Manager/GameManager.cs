@@ -15,12 +15,17 @@ public class GameManager : MonoBehaviour
     public event GameManagerEventHandler AdquireKeyEvent;//when the user gets to a sentence that has a key
     public event GameManagerEventHandler PauseEventEvent;
         
-    public ConversationManager conversationManager { get; set; }
+    private ConversationManager cm;
+    public ConversationManager conversationManager { get{
+        if (this.cm == null) {
+            this.cm = new ConversationManager();
+        }
+        return this.cm;
+    }}
 
 
     void Start()
     {
-        this.conversationManager = new ConversationManager();
         CallShowDialogsEvent();
     }
 
@@ -44,7 +49,7 @@ public class GameManager : MonoBehaviour
     {
         ChangeOptionEvent?.Invoke();
     }
-    public void CallAdquireKeyEvent() 
+    public void CallAcquireKeyEvent() 
     {
         AdquireKeyEvent?.Invoke();
     }

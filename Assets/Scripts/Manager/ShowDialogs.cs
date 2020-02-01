@@ -12,7 +12,7 @@ public class ShowDialogs : MonoBehaviour
     private int FIRST_NUMBER_FETCH; //how many sentences should fetch are the beggining
 
     [SerializeField]
-    private int upSteps;
+    private int UP_STEPS;
 
     [SerializeField]
     private GameObject FemaleDialog;
@@ -26,12 +26,11 @@ public class ShowDialogs : MonoBehaviour
     [SerializeField]
     private GameObject ParentDialogContainer;
 
-    private List<GameObject> alreadyShowed;
+    private List<GameObject> alreadyShowed = new List<GameObject>();
 
     public void OnEnable()
     {
         gameManagerRef = GetComponent<GameManager>();
-        Debug.Log(gameManagerRef);
         cm = gameManagerRef.conversationManager;
         gameManagerRef.ShowDialogsEvent += initialize; 
     }
@@ -41,12 +40,15 @@ public class ShowDialogs : MonoBehaviour
     }
     public void initialize()
     {
-         StartCoroutine(showSentences());
+        showSentences();
     }
-    public IEnumerator showSentences()
-    {
-        Debug.Log(cm);
-        Debug.Log("Showing sentences");
+    private void showSentences() {
+        foreach (GameObject go in alreadyShowed)
+        {
+            Destroy(go);
+        }
+        alreadyShowed = new List<GameObject>();
+
         foreach(Sentence s in cm.GetConversationChain(FIRST_NUMBER_FETCH))
         {
             if(s.speaker == 0) {
@@ -59,47 +61,58 @@ public class ShowDialogs : MonoBehaviour
             {
                 addSentenceFemale(s.text);
             }
-            moveUp();
+        }
+        moveUp(FIRST_NUMBER_FETCH);
+    }
+    public IEnumerator showSentencesAnimation()
+    {
+        foreach(Sentence s in cm.GetConversationChain(FIRST_NUMBER_FETCH))
+        {
+            if(s.speaker == 0) {
+                addSentenceSpeaker(s.text);
+            }else if(s.speaker == 1)
+            {
+                addSentenceMale(s.text);
+            }
+            else
+            {
+                addSentenceFemale(s.text);
+            }
+            moveUp(1);
             yield return new WaitForSeconds(1f);
         }        
     }
 
-    public void moveUp()
+    public void moveUp(int amount)
     {
+        int i = 1;
         foreach (GameObject go in alreadyShowed)
         {
             Vector3 old = go.GetComponent<RectTransform>().localPosition;
-            go.GetComponent<RectTransform>().localPosition = new Vector3(old.x, old.y + upSteps, old.z);
+            go.GetComponent<RectTransform>().localPosition = new Vector3(old.x, old.y + UP_STEPS * (amount - i) , old.z);
+            i++;
         }
     }
-    public void addSentenceSpeaker(string s)
+    public void addSentenceSpeaker(string text)
     {
-        GameObject dialog = Instantiate(SpeakerDialog, Vector3.zero, Quaternion.identity) as GameObject;
-        dialog.transform.SetParent(ParentDialogContainer.transform);
-        dialog.GetComponent<RectTransform>().localPosition = new Vector3(-100, -130, 0);
-        dialog.GetComponent<RectTransform>().localScale = new Vector3(2.5f, 5, 1);
-        dialog.GetComponentInChildren<TextMeshProUGUI>().text = s;
-        alreadyShowed.Add(dialog);
+        addSentence(SpeakerDialog, text, 0);
     }
-    public void addSentenceFemale(string s)
+    public void addSentenceFemale(string text)
     {
-        GameObject dialog = Instantiate(FemaleDialog, Vector3.zero, Quaternion.identity) as GameObject;
-        dialog.transform.SetParent(ParentDialogContainer.transform);
-        dialog.GetComponent<RectTransform>().localPosition = new Vector3(-100, -130, 0);
-        dialog.GetComponent<RectTransform>().localScale = new Vector3(2.5f, 5, 1);
-        dialog.GetComponentInChildren<TextMeshProUGUI>().text = s;
-        alreadyShowed.Add(dialog);
+        addSentence(FemaleDialog, text, 0);
     }
-    public void addSentenceMale(string s)
+    public void addSentenceMale(string text)
     {
-        GameObject dialog = Instantiate(MaleDialog, Vector3.zero, Quaternion.identity) as GameObject;
-        dialog.transform.SetParent(ParentDialogContainer.transform);
-        dialog.GetComponent<RectTransform>().localPosition = new Vector3(100, -130, 0);
-        dialog.GetComponent<RectTransform>().localScale = new Vector3(2.5f, 5, 1);
-        dialog.GetComponentInChildren<TextMeshProUGUI>().text = s;
-        alreadyShowed.Add(dialog);
+        addSentence(MaleDialog, text, 0);
     }
 
-
+    private void addSentence(GameObject type, string text, int position) {
+        GameObject dialog = Instantiate(type, Vector3.zero, Quaternion.identity) as GameObject;
+        dialog.transform.SetParent(ParentDialogContainer.transform);
+        dialog.GetComponent<RectTransform>().localPosition = new Vector3(-100, 100, 0);
+        dialog.GetComponent<RectTransform>().localScale = new Vector3(2.5f, 5, 1);
+        dialog.GetComponentInChildren<TextMeshProUGUI>().text = text;
+        alreadyShowed.Add(dialog);
+    }
 }
 

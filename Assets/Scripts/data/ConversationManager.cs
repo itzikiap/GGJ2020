@@ -48,9 +48,8 @@ public class ConversationManager : IConversationManager
     public void LoadConversationFromFile(string conversationFileName) {
         jsonRawData = File.ReadAllText(path + '/' + conversationFileName);
         conversation = JsonUtility.FromJson<DialogData>(jsonRawData);
-//        Debug.Log(JsonUtility.ToJson(conversation));
+       Debug.Log(JsonUtility.ToJson(conversation));
         SeekTo(0);
-        Sentence[] chain = GetConversationChain(5000000);
     }
     public int GetIndex() {
         return currentIndex;
@@ -67,14 +66,16 @@ public class ConversationManager : IConversationManager
 
         bool leaf = false;
         int i = 0;
+        Debug.Log(",ssssss " + JsonUtility.ToJson(link));
         chain.Add(link);
-        while (i <= count && !leaf) {
+        while (i < count && !leaf) {
             link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
             leaf = IsSentenceLeaf(link);
             Debug.Log(i+ "," + count+ "," + leaf+ "," + JsonUtility.ToJson(link));
             chain.Add(link);
             i ++;
         }
+        Debug.Log("Chain: " + JsonUtility.ToJson(chain.Count));
     
         return chain.ToArray();
     }
@@ -93,7 +94,7 @@ public class ConversationManager : IConversationManager
         bool leaf = false;
         int i = 0;
         Sentence link = conversation.sentences[0];
-        while (i <= index && !leaf) {
+        while (i < index && !leaf) {
             link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
             leaf = IsSentenceLeaf(link);
             i ++;
