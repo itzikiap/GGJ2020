@@ -1,0 +1,51 @@
+{
+    "sentences": [
+        {
+            "id": 0,
+            "tone": 0,
+            "text": "This is first text",
+            "speaker": 0,
+            "nextOptionsIds": [1, 2] 
+        },
+        {
+            "id": 1,
+            "tone": 2,
+            "text": "This is second text",
+            "speaker": 1,
+            "nextOptionsIds": [3]
+        },
+        {
+            "id": 2,
+            "tone": -2,
+            "text": "This is more text",
+            "speaker": 0,
+            "nextOptionsIds": [6]
+        },
+        {
+            "id": 3,
+            "tone": 4,
+            "text": "This is undefined",
+            "speaker": 1,
+            "nextOptionsIds": [4]
+        },
+        {
+            "id": 4,
+            "tone": 4,
+            "text": "This is HAPPY text",
+            "speaker": 0,
+            "nextOptionsIds": [5]
+        },
+        {
+            "id": 5,
+            "tone": -3,
+            "text": "This is not first text",
+            "speaker": 1
+        },
+        {
+            "id": 6,
+            "tone": 0,
+            "text": "text",
+            "speaker": 0
+        }
+    ]
+}
