@@ -4,9 +4,9 @@
 */
 [System.Serializable]
 public class DialogData {
-    Sentence[] sentences;
-    Key[] keys;
-    bool processed;
+    public Sentence[] sentences;
+    public Key[] keys;
+    public bool processed;
 }
 
 /**
@@ -26,8 +26,6 @@ public class Sentence {
     public int previousId;
     public int[] nextOptionsIds;
     // These definitions will be filled by the class
-    public Sentence previous;
-    public Sentence[] nextOptions;
     public int activeIndex;
 }
 
