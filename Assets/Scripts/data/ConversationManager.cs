@@ -1,5 +1,4 @@
-﻿using System.Net;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -15,10 +14,6 @@ public class ConversationManager : IConversationManager
     Key[] ObtainedKeys;
     DialogData conversation;
     public ConversationManager() {
-        Start();
-    }
-
-    void Start() {
         path = Application.streamingAssetsPath;
         LoadConversationFromFile("conversation.json");        
     }
@@ -33,12 +28,30 @@ public class ConversationManager : IConversationManager
         return sentence.nextOptionsIds.GetLength(0) == 0;
     }
 
+
+    // ----------- Iterator -----------
+    Sentence FirstItem { get{
+        SeekTo(0);
+        return currentSentence;
+    }}
+    Sentence NextItem{ get{
+        SeekBy(1);
+        return currentSentence;
+    }}
+    Sentence CurrentItem{ get{
+        return currentSentence;
+    }}
+    bool IsDone { get {
+        return IsCurrentIndexLeaf();
+    }}
     // ----------- INTERFACE METHODS --------
     public void LoadConversationFromFile(string conversationFileName) {
         jsonRawData = File.ReadAllText(path + '/' + conversationFileName);
         conversation = JsonUtility.FromJson<DialogData>(jsonRawData);
 //        Debug.Log(JsonUtility.ToJson(conversation));
         SeekTo(0);
+        Sentence[] chain = GetConversationChain(5000000);
+        Debug.Log("chain: "+ JsonUtility.ToJson(chain));
     }
     public int GetIndex() {
         return currentIndex;
@@ -49,15 +62,22 @@ public class ConversationManager : IConversationManager
     public Sentence GetCurrentSentence() {
         return currentSentence;
     }
-    public Sentence[] GetConversationChain(int Count) {
+    public Sentence[] GetConversationChain(int count) {
         Sentence link = GetCurrentSentence();
         List<Sentence> chain = new List<Sentence>();
-        while (link != null) {
+
+        bool leaf = false;
+        int i = 0;
+        chain.Add(link);
+        while (i <= count && !leaf) {
+            link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
+            leaf = IsSentenceLeaf(link);
+            Debug.Log(i+ "," + count+ "," + leaf+ "," + JsonUtility.ToJson(link));
             chain.Add(link);
-            link = IsSentenceLeaf(link) 
-                ? null 
-                : FindSentenceById(link.nextOptionsIds[link.activeIndex]);
+            i ++;
         }
+        Debug.Log("BEFORE chain: "+ JsonUtility.ToJson(chain));
+
         return chain.ToArray();
     }
     public Sentence[] GetOptionalNextSentences() {
