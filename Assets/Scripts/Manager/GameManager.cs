@@ -13,13 +13,14 @@ public class GameManager : MonoBehaviour
     public event GameManagerEventHandler ShowKeysEvent;//shows all the keys available for the current dot
     public event GameManagerEventHandler ChangeOptionEvent;//changes another option
     public event GameManagerEventHandler AdquireKeyEvent;//when the user gets to a sentence that has a key
+    public event GameManagerEventHandler PauseEventEvent;
         
     public ConversationManager conversationManager { get; set; }
 
 
     void Start()
     {
-        conversationManager = new ConversationManager();
+        this.conversationManager = new ConversationManager();
         CallShowDialogsEvent();
     }
 

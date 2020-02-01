@@ -31,6 +31,7 @@ public class ShowDialogs : MonoBehaviour
     public void OnEnable()
     {
         gameManagerRef = GetComponent<GameManager>();
+        Debug.Log(gameManagerRef);
         cm = gameManagerRef.conversationManager;
         gameManagerRef.ShowDialogsEvent += initialize; 
     }
