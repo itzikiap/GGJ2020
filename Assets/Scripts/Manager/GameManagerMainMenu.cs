@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManagerMainMenu : MonoBehaviour
 {
     public delegate void GameManagerEventHandler();
 
+    public event GameManagerEventHandler StartGameEvent;
     public event GameManagerEventHandler ExitGameEvent;
-        
-    private ConversationManager conversationManager;
 
-
-    void Start()
+    public void CallStartGameEvent()
     {
-        conversationManager = new ConversationManager();   
+        StartGameEvent?.Invoke();
     }
-
     public void CallExitGameEvent()
     {
         ExitGameEvent?.Invoke();
     }
 
 }
+
+
