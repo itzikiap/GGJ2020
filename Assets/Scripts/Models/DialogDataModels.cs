@@ -25,7 +25,6 @@ public class Sentence {
     public int unlockedByKeyId;
     public int previousId;
     public int[] nextOptionsIds;
-    // These definitions will be filled by the class
     public int activeIndex;
 }
 
