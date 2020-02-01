@@ -172,7 +172,7 @@
       "tone": 0,
       "speaker": 2,
       "nextOptionsIds": [32],
-      "hasKeysIds": []
+      "hasKeysIds": [6]
     },
     {
       "id": 20,
@@ -306,6 +306,39 @@
       "speaker": 0,
       "nextOptionsIds": [],
       "hasKeysIds": []
+    },
+    {
+      "id": 37,
+      "text": "My real dad was also nice. Now all I've left with is you.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [38],
+      "hasKeysIds": [],
+      "unlockedByKey": 7
+    },
+    {
+      "id": 38,
+      "text": "I was built to love you. Am I fulfilling my duty?",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [39],
+      "hasKeysIds": []
+    },
+    {
+      "id": 39,
+      "text": "You're just a robot! Get wrecked!.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [40],
+      "hasKeysIds": []
+    },
+    {
+      "id": 40,
+      "text": "I can make this real, but.... no.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
     }
   ],
   "keys" : [
@@ -343,8 +376,11 @@
       "id": 6,
       "text": "Abandon",
       "tone": 0
+    },
+    {
+      "id" : 7,
+      "text": "Real Dad",
+      "tone": 0
     }
-
-
   ]
 }
