@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Net;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -67,11 +68,19 @@ public class ConversationManager : IConversationManager
         }
         return chain.ToArray();
     }
-    public void SeekTo(int Index) {
-
+    public void SeekTo(int index) {
+        bool leaf = false;
+        int i = 0;
+        Sentence link = conversation.sentences[0];
+        while (i <= index && !leaf) {
+            link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
+            leaf = IsSentenceLeaf(link);
+        }
+        currentIndex = i;
+        currentSentence = link;
     }
-    public void SeekBy(int Steps) {
-
+    public void SeekBy(int steps) {
+        SeekTo(currentIndex + steps);
     }
     public void ChangeActiveOption(int index) {
         currentSentence.activeIndex = index;
