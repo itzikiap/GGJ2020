@@ -35,10 +35,10 @@ public class ConversationManager : MonoBehaviour, IConversationManager
         return null;
     }
     public Sentence[] GetConversationChain(int Count) {
-        return [];
+        return new Sentence[];
     }
     public Sentence[] GetOptionalNextSentences() {
-        return [];
+        return new Sentence[];
     }
     public void SeekTo(int Index) {
 
