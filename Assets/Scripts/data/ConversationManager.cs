@@ -30,7 +30,6 @@ public class ConversationManager : IConversationManager
         return null;
     }
     bool IsSentenceLeaf(Sentence sentence) {
-        Debug.Log("sentence" + currentIndex + " > " + JsonUtility.ToJson(sentence));
         return sentence.nextOptionsIds.GetLength(0) == 0;
     }
 
@@ -79,6 +78,7 @@ public class ConversationManager : IConversationManager
         while (i <= index && !leaf) {
             link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
             leaf = IsSentenceLeaf(link);
+            i ++;
         }
         currentIndex = i;
         currentSentence = link;
