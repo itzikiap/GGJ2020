@@ -5,14 +5,16 @@
             "tone": 0,
             "text": "This is first text",
             "speaker": 0,
-            "nextOptionsIds": [1, 2] 
+            "nextOptionsIds": [1, 2],
+            "hasKeysIds": [0]
         },
         {
             "id": 1,
             "tone": 2,
             "text": "This is second text",
             "speaker": 1,
-            "nextOptionsIds": [3]
+            "nextOptionsIds": [3],
+            "unlockedByKey": 0
         },
         {
             "id": 2,
@@ -46,6 +48,13 @@
             "tone": 0,
             "text": "text",
             "speaker": 0
+        }
+    ],
+    "keys": [
+        {
+            "id": 0,
+            "text": "key",
+            "tone": 0
         }
     ]
 }

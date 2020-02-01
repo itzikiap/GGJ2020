@@ -5,6 +5,7 @@
 [System.Serializable]
 public class DialogData {
     Sentence[] sentences;
+    Key[] keys;
     bool processed;
 }
 
@@ -16,19 +17,18 @@ public class DialogData {
 [System.Serializable]
 public class Sentence {
     // Content definitions
-    int id;
-    int tone;
-    string text;
-    int speaker;
-    Key ownKey;
-    Key unlockedBy;
-    int previousId;
-    int[] nextOptionsIds;
-
+    public int id;
+    public int tone;
+    public string text;
+    public int speaker;
+    public int[] hasKeysIds;
+    public int unlockedByKeyId;
+    public int previousId;
+    public int[] nextOptionsIds;
     // These definitions will be filled by the class
-    Sentence previous;
-    Sentence[] nextOptions;
-    int activeIndex;
+    public Sentence previous;
+    public Sentence[] nextOptions;
+    public int activeIndex;
 }
 
 /**
@@ -36,7 +36,7 @@ public class Sentence {
 */
 [System.Serializable]
 public class Key {
-    int id;
-    string text;
-    int tone;
+    public int id;
+    public string text;
+    public int tone;
 }

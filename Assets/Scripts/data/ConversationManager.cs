@@ -11,8 +11,12 @@ public class ConversationManager : MonoBehaviour, IConversationManager
     Key[] ObtainedKeys;
     DialogData conversation;
     public ConversationManager() {
+    }
+
+    void Start() {
+        Debug.Log("Got Here");
         path = Application.streamingAssetsPath;
-        LoadConversationFromFile("dialogs.json");
+        LoadConversationFromFile("dialogs.json");        
     }
 
     void ConstructConversation(Sentence[] sentenceList) {
