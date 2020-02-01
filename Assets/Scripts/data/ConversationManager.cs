@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class ConversationManager : IConversationManager
 {
+
     string path;
     string jsonRawData;
     int currentIndex;
@@ -19,7 +20,7 @@ public class ConversationManager : IConversationManager
 
     void Start() {
         path = Application.streamingAssetsPath;
-        LoadConversationFromFile("dialogs.json");        
+        LoadConversationFromFile("conversation.json");        
     }
 
     Sentence FindSentenceById(int id) {
@@ -29,13 +30,15 @@ public class ConversationManager : IConversationManager
         return null;
     }
     bool IsSentenceLeaf(Sentence sentence) {
-        return currentSentence.nextOptionsIds.GetLength(0) == 0;
+        return sentence.nextOptionsIds.GetLength(0) == 0;
     }
 
     // ----------- INTERFACE METHODS --------
     public void LoadConversationFromFile(string conversationFileName) {
         jsonRawData = File.ReadAllText(path + '/' + conversationFileName);
         conversation = JsonUtility.FromJson<DialogData>(jsonRawData);
+//        Debug.Log(JsonUtility.ToJson(conversation));
+        SeekTo(0);
     }
     public int GetIndex() {
         return currentIndex;
@@ -75,6 +78,7 @@ public class ConversationManager : IConversationManager
         while (i <= index && !leaf) {
             link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
             leaf = IsSentenceLeaf(link);
+            i ++;
         }
         currentIndex = i;
         currentSentence = link;

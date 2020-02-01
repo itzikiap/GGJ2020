@@ -1,0 +1,350 @@
+{
+  "sentences" : [
+    {
+      "id": 30,
+      "text": "...",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [0, 8, 23],
+      "hasKeysIds": []
+    },
+    {
+      "id": 0,
+      "text": "Your mother was a nice person",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [1,5,10],
+      "hasKeysIds": []
+    },
+    {
+      "id": 1,
+      "text": "Is that so? Then how do you explain all the fighting you and mom had the last few months?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [2,15,20],
+      "hasKeysIds": []
+    },
+    {
+      "id": 2,
+      "text": "Look... we never fought about you. We have always loved you!",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [3,22],
+      "hasKeysIds": []
+    },
+    {
+      "id": 3,
+      "text": "Come on dad, do you really expect me to believe that? I know you're trying to avoid the topic.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [4],
+      "hasKeysIds": []
+    },
+    {
+      "id": 4,
+      "text": "Or will you finally tell me what really happened last summer?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [26],
+      "hasKeysIds": [8]
+    },
+    {
+      "id": 5,
+      "text": "It's just so sad... . I barely remember the last time we were happy together.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [6],
+      "hasKeysIds": [],
+      "unlockedByKey" : 8
+    },
+    {
+      "id": 6,
+      "text": "That was during the summer vacation in Italy, right?",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [7],
+      "hasKeysIds": []
+    },
+    {
+      "id": 7,
+      "text": "Yes... . And after that mom was stuffing us with pasta every weekend. You hated it.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [31],
+      "hasKeysIds": [1]
+    },
+    {
+      "id": 8,
+      "text": "You mother loved cooking.",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [9],
+      "hasKeysIds": [2],
+      "unlockedByKey" : 1
+
+    },
+    {
+      "id": 9,
+      "text": "Seriously dad? Is that all you have to say about her?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [35],
+      "hasKeysIds": []
+    },
+    {
+      "id": 10,
+      "text": "The last nice thing she did for me was when she stayed with me at the hopsital.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [11],
+      "hasKeysIds": [],
+      "unlockedByKey" : 2
+    },
+    {
+      "id": 11,
+      "text": "When was that?",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [12],
+      "hasKeysIds": []
+    },
+    {
+      "id": 12,
+      "text": "When I tried cooking on my own and the microwave exploded! All you did was standing there and laughing at me.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [13],
+      "hasKeysIds": []
+    },
+    {
+      "id": 13,
+      "text": "I don't recall...",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [14],
+      "hasKeysIds": []
+    },
+    {
+      "id": 14,
+      "text": "Are you serious?! I was injured! I even had to get a surgery!",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [36],
+      "hasKeysIds": [3]
+    },
+    {
+      "id": 15,
+      "text": "There is something we've kept secret from you. There was a surgery long time ago...",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [16],
+      "hasKeysIds": [],
+      "unlockedByKey" : 3
+
+    },
+    {
+      "id": 16,
+      "text": "So what?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [17],
+      "hasKeysIds": []
+    },
+    {
+      "id": 17,
+      "text": "I am your true mother. I had a sex change right after your brith.",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [18],
+      "hasKeysIds": [4]
+    },
+    {
+      "id": 18,
+      "text": "What the hell? What does that mean...",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [19],
+      "hasKeysIds": []
+    },
+    {
+      "id": 19,
+      "text": "Dad... mom ? Who is my real father?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [32],
+      "hasKeysIds": []
+    },
+    {
+      "id": 20,
+      "text": "Ok, it seems I have to come clear now: I had sex with a lot of women during our marriage.",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [21],
+      "hasKeysIds": [],
+      "unlockedByKey" : 4
+
+    },
+    {
+      "id": 21,
+      "text": "You cheated on mom!? You've been lying to us all this time? You're horrible!",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [34],
+      "hasKeysIds": [5]
+    },
+    {
+      "id": 22,
+      "text": "YOU loved me? How can you say that when you abandoned me after mum died?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [33],
+      "hasKeysIds": [6],
+      "unlockedByKey" : 5
+
+    },
+    {
+      "id": 23,
+      "text": "After all these years, I can still not forgive her for going with that guy.",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [24],
+      "hasKeysIds": [],
+      "unlockedByKey" : 6
+    },
+    {
+      "id": 24,
+      "text": "I think we're better off without her.",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [25],
+      "hasKeysIds": []
+    },
+    {
+      "id": 25,
+      "text": "That's mean, but I get what you mean. At least we have each other.",
+      "tone": 0,
+      "speaker": 1,
+      "nextOptionsIds": [26],
+      "hasKeysIds": []
+    },
+    {
+      "id": 26,
+      "text": "How about some ice cream?",
+      "tone": 0,
+      "speaker": 2,
+      "nextOptionsIds": [36],
+      "hasKeysIds": []
+    },
+    {
+      "id": 27,
+      "text": "Alright, let's stop them here. This will get nasty, believe me.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [28],
+      "hasKeysIds": []
+    },
+    {
+      "id": 28,
+      "text": "But look what we got here - a topic key. Summer. That's what we've been looking for.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [29],
+      "hasKeysIds": []
+    },
+    {
+      "id": 29,
+      "text": "Let's go back and fix this mess.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    },
+    {
+      "id": 31,
+      "text": "Ergh.... There we go finger-pointing again. Let's try a different approach.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    },
+    {
+      "id": 32,
+      "text": "Oof... . I don't think that's the path we should take.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    },
+    {
+      "id": 33,
+      "text": "Nah... this will end in tears all over again.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    },
+    {
+      "id": 34,
+      "text": "He even seems proud of it. But that's not what we want.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    },
+    {
+      "id": 35,
+      "text": "That's dull, fella. Try something else.",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    },
+    {
+      "id": 36,
+      "text": "That's it! We've got the Ice cream!",
+      "tone": 0,
+      "speaker": 0,
+      "nextOptionsIds": [],
+      "hasKeysIds": []
+    }
+  ],
+  "keys" : [
+    {
+      "id": 8,
+      "text": "Summer",
+      "tone": 0
+    },
+    {
+      "id": 1,
+      "text": "Pasta",
+      "tone": 0
+    },
+    {
+      "id": 2,
+      "text": "Cook",
+      "tone": 0
+    },
+    {
+      "id": 3,
+      "text": "Surgery",
+      "tone": 0
+    },
+    {
+      "id": 4,
+      "text": "Sex",
+      "tone": 0
+    },
+    {
+      "id": 5,
+      "text": "Lie",
+      "tone": 0
+    },
+    {
+      "id": 6,
+      "text": "Abandon",
+      "tone": 0
+    }
+
+
+  ]
+}
