@@ -105,7 +105,6 @@ public class ConversationManager : IConversationManager
         while (i < index && !leaf) {
             link = FindSentenceById(link.nextOptionsIds[link.activeIndex]);
             leaf = IsSentenceLeaf(link);
-            // Debug.Log(i+ "," + index+ "," + leaf+ "," + JsonUtility.ToJson(link));
             i ++;
         }
         return link;

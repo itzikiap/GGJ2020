@@ -33,6 +33,7 @@ public class TimeLineManager : MonoBehaviour
             Destroy(go);
         }
         showing = new List<GameObject>();
+        string msg = "";
 
         addDot();
         int numberOfOptions = gm.conversationManager.GetOptionalNextSentences().Length;
