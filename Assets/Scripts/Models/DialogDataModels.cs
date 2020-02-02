@@ -19,6 +19,7 @@ public class Sentence {
     // Content definitions
     public int id;
     public int tone;
+    public string bubble = "1A";
     public string text;
     public int speaker;
     public int[] hasKeysIds;
