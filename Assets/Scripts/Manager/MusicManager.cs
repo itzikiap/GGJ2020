@@ -12,7 +12,7 @@ public class MusicManager : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
 
-    private int playing;
+    private int playing = -1;
 
    
     public const int INTRO = 0;
@@ -34,31 +34,24 @@ public class MusicManager : MonoBehaviour
 
     public void PlaySound(int sound_constant)
     {
-<<<<<<< .mine
-       
         audioSource.clip = audios[sound_constant];
-        audioSource.Play();
-
-
-
-
-
-=======
+        
+                          
         if (sound_constant != playing)
         {
             audioSource.clip = audios[sound_constant];
+            audioSource.loop = true;
             audioSource.Play();
         }
-
-        
+               
         playing = sound_constant;
->>>>>>> .theirs
     }
+
 
     /**
      * Loop is set to false by default
      */
-    public void SetLoop(bool loop = true)
+    public void SetLoop(bool loop)
     {
         audioSource.loop = loop;
     }
