@@ -17,7 +17,6 @@ public class StartGame : MonoBehaviour
 
     public void LoadMainScreen()
     {
-        Debug.Log("Showing main game");
         SceneManager.LoadScene(1);
     }
 

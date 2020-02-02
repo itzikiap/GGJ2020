@@ -32,17 +32,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        CallShowDialogsEvent();
+        this.CallShowDialogsEvent();
+        this.CallScrollEvent();
+
     }
 
     void Update () {
         bool scrolled = true;
         if(Input.GetKeyDown(KeyCode.A)){
             this.cm.SeekBy(-1);
-            this.CheckForKey();
         }
         else if(Input.GetKeyDown(KeyCode.D)){
             this.cm.SeekBy(1);
+            this.CheckForKey();
         } else {
             scrolled = false;
         }
@@ -72,8 +74,9 @@ public class GameManager : MonoBehaviour
     }
 
     private void CheckForKey() {
-        if (this.cm.GetCurrentSentence().hasKeysIds.Length > 0) {
-            this.cm.AddKeysIds(this.cm.GetCurrentSentence().hasKeysIds);
+        Sentence sentence = this.cm.GetSentenceInIndex(this.cm.GetIndex() + 1);
+        if (sentence.hasKeysIds.Length > 0) {
+            this.cm.AddKeysIds(sentence.hasKeysIds);
         }
         this.CallObtainedKeysEvent();
     }

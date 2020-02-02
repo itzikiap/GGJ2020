@@ -23,7 +23,7 @@ public class Sentence {
     public string text;
     public int speaker;
     public int[] hasKeysIds;
-    public int unlockedByKeyId;
+    public int unlockedByKey = -1;
     public int previousId;
     public int[] nextOptionsIds;
     public int activeIndex;
