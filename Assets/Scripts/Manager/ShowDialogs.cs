@@ -140,8 +140,7 @@ public class ShowDialogs : MonoBehaviour
             {
                 addSentenceMale(s);
             }
-            else
-            {
+            else            {
                 addSentenceFemale(s);
             }
             moveUp(1);

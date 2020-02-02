@@ -651,18 +651,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 61530551aa92d5a4387fd4bcf4d9c8b0, type: 3}
   - {fileID: 4197634691617139032, guid: 3d9c2a5fe14d5f74a8a07a4d87815104, type: 3}
   imagesFather:
-  - {fileID: -9129886275792519839, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: -3977805975806814889, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 2704596341151302335, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 5854589773965251629, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: -7962763880940269712, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 486616300536080449, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 486616300536080449, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 486616300536080449, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 486616300536080449, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 486616300536080449, guid: a2f76148e332f384f85cb9782d9f9bd3, type: 3}
-  - {fileID: 21300000, guid: 61530551aa92d5a4387fd4bcf4d9c8b0, type: 3}
-  - {fileID: 21300000, guid: 61530551aa92d5a4387fd4bcf4d9c8b0, type: 3}
+  - {fileID: -7684283345619354061, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: 2436873767844633496, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: -4328484366577124163, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: -4328484366577124163, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: -2485904678342746309, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: 3593780286954986857, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: -7307066380639749351, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: -7307066380639749351, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: -7307066380639749351, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: 21300000, guid: 460b3e3a6f84a5147ae1ade3cd47c37a, type: 3}
+  - {fileID: -6222002695727963377, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: -2485904678342746309, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
   fatherImage: {fileID: 889961706}
   daughterImage: {fileID: 118010008}
 --- !u!114 &278803611
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3977805975806814889, guid: a2f76148e332f384f85cb9782d9f9bd3,
+  m_Sprite: {fileID: -2485904678342746309, guid: badbefc54a6e12a4b8733d00e419b130,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1067,8 +1067,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: 150}
-  m_SizeDelta: {x: 250, y: 300}
+  m_AnchoredPosition: {x: 463, y: 124.99999}
+  m_SizeDelta: {x: 250, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1785744140
 GameObject:
