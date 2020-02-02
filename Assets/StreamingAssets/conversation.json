@@ -532,15 +532,26 @@
     },
     {
       "id": 45,
-      "text": "No. Back in the war, when the lizards hunted us.",
+      "text": "No.",
+      "audio": 14,
+      "tone": 0,
+      "speaker": 2,
+      "bubble": "3S",
+      "nextOptionsIds": [51],
+      "expression" : [6, 6],
+      "hasKeysIds": [],
+      "unlockedByKey" : 5
+    },
+    {
+      "id": 51,
+      "text": "Back in the war, when the lizards hunted us.",
       "audio": 14,
       "tone": 0,
       "speaker": 2,
       "bubble": "3S",
       "nextOptionsIds": [46],
       "expression" : [6, 6],
-      "hasKeysIds": [8],
-      "unlockedByKey" : 5
+      "hasKeysIds": [8]
     },
     {
       "id": 46,
