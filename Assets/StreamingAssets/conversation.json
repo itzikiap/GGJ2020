@@ -269,6 +269,7 @@
       "text": "Alright, let's stop them here. This will get nasty, believe me.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [28],
       "hasKeysIds": []
     },
@@ -277,6 +278,7 @@
       "text": "But look what we got here - a topic key. Summer. That's what we've been looking for.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [29],
       "hasKeysIds": [8]
     },
@@ -285,6 +287,7 @@
       "text": "Let's go back and fix this mess.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -293,6 +296,7 @@
       "text": "Ergh.... There we go finger-pointing again. Let's try a different approach.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -301,6 +305,7 @@
       "text": "Oof... . I don't think that's the path we should take.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -309,6 +314,7 @@
       "text": "Nah... this will end in tears all over again.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -317,6 +323,7 @@
       "text": "He even seems proud of it. But that's not what we want.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -325,6 +332,7 @@
       "text": "That's dull, fella. Try something else.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -333,14 +341,16 @@
       "text": "That's it! We've got the Ice cream!",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
     {
       "id": 37,
-      "text": "My real dad was also nice. Now all I've left with is you.",
+      "text": "My real dad was also nice. Now all I'm left with is you, a stupid robot!",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2D",
       "nextOptionsIds": [38],
       "hasKeysIds": [],
       "unlockedByKey": 7
@@ -350,22 +360,25 @@
       "text": "I was built to love you. Am I fulfilling my duty?",
       "tone": 0,
       "speaker": 1,
+      "bubble": "1S",
       "nextOptionsIds": [39],
       "hasKeysIds": []
     },
     {
       "id": 39,
-      "text": "You're just a robot! Get wrecked!.",
+      "text": "You can't deal with emotions! Get wrecked!.",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2B",
       "nextOptionsIds": [40],
       "hasKeysIds": []
     },
     {
       "id": 40,
-      "text": "I can make this real, but.... no.",
+      "text": "I could make this real, but.... no.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -376,6 +389,7 @@
       "tone": 0,
       "speaker": 1,
       "nextOptionsIds": [42],
+      "bubble": "1A",
       "hasKeysIds": [],
       "unlockedByKey": 7
     },
@@ -385,6 +399,7 @@
       "tone": 0,
       "speaker": 2,
       "nextOptionsIds": [43],
+      "bubble": "2A",
       "hasKeysIds": []
     },
     {
@@ -392,6 +407,7 @@
       "text": "I'm a lizard!",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2S",
       "nextOptionsIds": [44],
       "hasKeysIds": []
     },
@@ -400,6 +416,7 @@
       "text": "Ah well, that was unexpected. I have to concede it doesn't make much sense.",
       "tone": 0,
       "speaker": 0,
+      "bubble": "NA",
       "nextOptionsIds": [],
       "hasKeysIds": []
     },
@@ -408,6 +425,7 @@
       "text": "No. Back in the war, when the lizards hunted us.",
       "tone": 0,
       "speaker": 2,
+      "bubble": "3S",
       "nextOptionsIds": [46],
       "hasKeysIds": [8],
       "unlockedByKey" : 5
@@ -416,6 +434,7 @@
       "id": 46,
       "text": "Oopsie.. Might be a slip up in the fabric of reality. Nothing we can't fix though.",
       "tone": 0,
+      "bubble": "NA",
       "speaker": 0,
       "nextOptionsIds": []
     }
