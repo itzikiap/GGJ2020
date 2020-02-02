@@ -343,7 +343,7 @@
     {
       "id": 28,
       "text": "But look what we got here - a topic key. Summer. That's what we've been looking for.",
-      "audio":12,
+      "audio":10,
       "tone": 0,
       "speaker": 0,
       "bubble": "NA",
@@ -354,7 +354,7 @@
     {
       "id": 29,
       "text": "Let's go back and fix this mess.",
-      "audio":12,
+      "audio":10,
       "tone": 0,
       "speaker": 0,
       "bubble": "NA",
@@ -561,7 +561,8 @@
       "bubble": "NA",
       "expression" : [6, 7],
       "speaker": 0,
-      "nextOptionsIds": []
+      "nextOptionsIds": [],
+      "hasKeysIds": []
     }
   ],
   "keys" : [

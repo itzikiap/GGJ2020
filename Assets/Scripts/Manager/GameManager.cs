@@ -81,10 +81,11 @@ public class GameManager : MonoBehaviour
 
     private void CheckForKey() {
         Sentence sentence = this.cm.GetSentenceInIndex(this.cm.GetIndex() + 1);
-        if (sentence.hasKeysIds.Length > 0) {
+        Debug.Log(JsonUtility.ToJson(sentence));
+        if ( sentence != null && sentence.hasKeysIds.Length > 0) {
             this.cm.AddKeysIds(sentence.hasKeysIds);
+            this.CallObtainedKeysEvent();
         }
-        this.CallObtainedKeysEvent();
     }
 
 
