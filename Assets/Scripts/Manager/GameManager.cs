@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
         
     private ConversationManager cm;
     private MusicManager musicManager;
+    private CharacterManager characterManager;
+
     
     public ConversationManager conversationManager { get{
         if (this.cm == null) {
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
         this.CallShowDialogsEvent();
         this.CallScrollEvent();
         musicManager = GetComponent<MusicManager>();
+        characterManager = GetComponent<CharacterManager>();
     }
 
     void Update () {
@@ -48,6 +51,7 @@ public class GameManager : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.D)){
             this.cm.SeekBy(1);
             this.CheckForKey();
+   
         } else {
             scrolled = false;
         }
