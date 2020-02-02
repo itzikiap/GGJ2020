@@ -10,8 +10,7 @@ public class ShowDialogs : MonoBehaviour
     private GameManager gameManagerRef;
     private ConversationManager cm;
 
-    [SerializeField]
-    private int FIRST_NUMBER_FETCH; //how many sentences should fetch are the beggining
+    private int FIRST_NUMBER_FETCH = 2; //how many sentences should fetch are the beggining
 
     [SerializeField]
     private int UP_STEPS;
@@ -156,7 +155,7 @@ public class ShowDialogs : MonoBehaviour
         foreach (GameObject go in alreadyShowed)
         {
             Vector3 old = go.GetComponent<RectTransform>().localPosition;
-            go.GetComponent<RectTransform>().localPosition = new Vector3(old.x, old.y + UP_STEPS * (amount - i) , old.z);
+            go.GetComponent<RectTransform>().localPosition = new Vector3(old.x+100, old.y + UP_STEPS * (amount - i) , old.z);
             i++;
         }
     }
