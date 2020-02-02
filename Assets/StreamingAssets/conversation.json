@@ -18,7 +18,7 @@
       "tone": 0,
       "bubble": "1A",
       "speaker": 1,
-      "nextOptionsIds": [1,5,10],
+      "nextOptionsIds": [1,5,10, 37],
       "expression" : [8, 8],
       "hasKeysIds": []
     },
@@ -156,6 +156,7 @@
       "bubble": "2B",
       "speaker": 2,
       "nextOptionsIds": [13],
+      "expression" : [6, 4],
       "hasKeysIds": []
     },
     {
@@ -166,6 +167,7 @@
       "bubble": "1A",
       "speaker": 1,
       "nextOptionsIds": [14],
+      "expression" : [6, 5],
       "hasKeysIds": []
     },
     {
@@ -176,6 +178,7 @@
       "speaker": 2,
       "bubble": "2B",
       "nextOptionsIds": [36],
+      "expression" : [3, 1],
       "hasKeysIds": [3]
     },
     {
@@ -186,6 +189,7 @@
       "speaker": 1,
       "bubble": "1B",
       "nextOptionsIds": [16],
+      "expression" : [4, 4],
       "hasKeysIds": [],
       "unlockedByKey" : 3
 
@@ -198,16 +202,18 @@
       "speaker": 2,
       "bubble": "2D",
       "nextOptionsIds": [17],
+      "expression" : [4, 4],
       "hasKeysIds": []
     },
     {
       "id": 17,
-      "text": "I am your true mother. I had a sex change right after your brith.",
+      "text": "I am your true mother. I had a sex change right after your birth.",
 	  "audio":9,
       "tone": 0,
       "speaker": 1,
       "bubble": "4S",
       "nextOptionsIds": [18],
+      "expression" : [1, 11],
       "hasKeysIds": [4]
     },
     {
@@ -218,6 +224,7 @@
       "speaker": 2,
       "bubble": "2B",
       "nextOptionsIds": [19],
+      "expression" : [1, 11],
       "hasKeysIds": []
     },
     {
@@ -228,6 +235,7 @@
       "speaker": 2,
       "bubble": "2D",
       "nextOptionsIds": [32],
+      "expression" : [0, 11],
       "hasKeysIds": [6]
     },
     {
@@ -238,6 +246,7 @@
       "speaker": 1,
       "bubble": "1A",
       "nextOptionsIds": [21],
+      "expression" : [1, 4],
       "hasKeysIds": [],
       "unlockedByKey" : 4
 
@@ -250,6 +259,7 @@
       "speaker": 2,
       "bubble": "2C",
       "nextOptionsIds": [34],
+      "expression" : [3, 4],
       "hasKeysIds": [5]
     },
     {
@@ -260,6 +270,7 @@
       "speaker": 2,
       "bubble": "2D",
       "nextOptionsIds": [33],
+      "expression" : [2, 4],
       "hasKeysIds": [6],
       "unlockedByKey" : 5
 
@@ -272,6 +283,7 @@
       "speaker": 1,
       "bubble": "1D",
       "nextOptionsIds": [24],
+      "expression" : [7, 7],
       "hasKeysIds": [],
       "unlockedByKey" : 6
     },
@@ -283,16 +295,18 @@
       "speaker": 2,
       "bubble": "2A",
       "nextOptionsIds": [25],
+      "expression" : [6, 7],
       "hasKeysIds": []
     },
     {
       "id": 25,
-      "text": "That's mean, but I get what you want to say. At least we have each other.",
+      "text": "That's harsh, but I get what you want to say. At least we have each other.",
 	  "audio":1,
       "tone": 0,
       "speaker": 1,
       "bubble": "1A",
       "nextOptionsIds": [26],
+      "expression" : [4, 1],
       "hasKeysIds": []
     },
     {
@@ -303,6 +317,7 @@
       "speaker": 2,
       "bubble": "2B",
       "nextOptionsIds": [36],
+      "expression" : [3, 1],
       "hasKeysIds": []
     },
     {
@@ -313,6 +328,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [28],
+      "expression" : [3, 1],
       "hasKeysIds": []
     },
     {
@@ -323,6 +339,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [29],
+      "expression" : [3, 1],
       "hasKeysIds": [8]
     },
     {
@@ -333,6 +350,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [3, 1],
       "hasKeysIds": []
     },
     {
@@ -343,6 +361,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [2, 1],
       "hasKeysIds": []
     },
     {
@@ -353,6 +372,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [0, 11],
       "hasKeysIds": []
     },
     {
@@ -363,6 +383,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [2, 4],
       "hasKeysIds": []
     },
     {
@@ -373,6 +394,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [3, 4],
       "hasKeysIds": []
     },
     {
@@ -383,6 +405,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [6, 3],
       "hasKeysIds": []
     },
     {
@@ -393,6 +416,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [6, 7],
       "hasKeysIds": []
     },
     {
@@ -404,6 +428,7 @@
       "bubble": "2D",
       "nextOptionsIds": [38],
       "hasKeysIds": [],
+      "expression" : [7, 10],
       "unlockedByKey": 7
     },
     {
@@ -414,6 +439,7 @@
       "speaker": 1,
       "bubble": "1S",
       "nextOptionsIds": [39],
+      "expression" : [7, 10],
       "hasKeysIds": []
     },
     {
@@ -424,6 +450,7 @@
       "speaker": 2,
       "bubble": "2B",
       "nextOptionsIds": [40],
+      "expression" : [6, 10],
       "hasKeysIds": []
     },
     {
@@ -434,6 +461,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [6, 10],
       "hasKeysIds": []
     },
 
@@ -446,6 +474,7 @@
       "nextOptionsIds": [42],
       "bubble": "1A",
       "hasKeysIds": [],
+      "expression" : [4, 4],
       "unlockedByKey": 7
     },
     {
@@ -456,6 +485,7 @@
       "speaker": 2,
       "nextOptionsIds": [43],
       "bubble": "2A",
+      "expression" : [6, 4],
       "hasKeysIds": []
     },
     {
@@ -466,6 +496,7 @@
       "speaker": 2,
       "bubble": "2S",
       "nextOptionsIds": [44],
+      "expression" : [0, 9],
       "hasKeysIds": []
     },
     {
@@ -476,6 +507,7 @@
       "speaker": 0,
       "bubble": "NA",
       "nextOptionsIds": [],
+      "expression" : [0, 9],
       "hasKeysIds": []
     },
     {
@@ -486,6 +518,7 @@
       "speaker": 2,
       "bubble": "3S",
       "nextOptionsIds": [46],
+      "expression" : [6, 6],
       "hasKeysIds": [8],
       "unlockedByKey" : 5
     },
@@ -495,6 +528,7 @@
 	  "audio":1,
       "tone": 0,
       "bubble": "NA",
+      "expression" : [6, 7],
       "speaker": 0,
       "nextOptionsIds": []
     }
