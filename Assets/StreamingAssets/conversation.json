@@ -559,7 +559,7 @@
       "audio":14,
       "tone": 0,
       "bubble": "NA",
-      "expression" : [6, 7],
+      "expression" : [6, 9],
       "speaker": 0,
       "nextOptionsIds": [],
       "hasKeysIds": []
