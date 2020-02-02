@@ -25,7 +25,7 @@ public class Sentence {
     public int audio = 1;
     public bool audioloop = false;
     public int[] hasKeysIds;
-    public int unlockedByKeyId;
+    public int unlockedByKey = -1;
     public int previousId;
     public int[] nextOptionsIds;
     public int activeIndex;
