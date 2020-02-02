@@ -662,7 +662,7 @@ MonoBehaviour:
   - {fileID: -7307066380639749351, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
   - {fileID: 21300000, guid: 460b3e3a6f84a5147ae1ade3cd47c37a, type: 3}
   - {fileID: -6222002695727963377, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
-  - {fileID: -2485904678342746309, guid: badbefc54a6e12a4b8733d00e419b130, type: 3}
+  - {fileID: 21300000, guid: 66327aa96bc302247bbc6a83cae93fcf, type: 3}
   fatherImage: {fileID: 889961706}
   daughterImage: {fileID: 118010008}
 --- !u!114 &278803611
