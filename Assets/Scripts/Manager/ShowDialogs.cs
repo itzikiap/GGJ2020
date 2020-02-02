@@ -116,15 +116,15 @@ public class ShowDialogs : MonoBehaviour
             if (i == 0) {
                 // addSentenceSpeaker(s.text, s.bubble);
                 if(s.speaker == 0) {
-                    addSentenceSpeaker(s.text, s.bubble);
+                    addSentenceSpeaker(s);
                 }
                 else if(s.speaker == 1)
                 {
-                    addSentenceMale(s.text, s.bubble);
+                    addSentenceMale(s);
                 }
                 else
                 {
-                    addSentenceFemale(s.text, s.bubble);
+                    addSentenceFemale(s);
                 }
             }
             i--;
