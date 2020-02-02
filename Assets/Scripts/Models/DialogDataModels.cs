@@ -23,7 +23,7 @@ public class Sentence {
     public string text;
     public int speaker;
     public int audio = 1;
-    public bool audioloop = false;
+    public bool audioloop = true;
     public int[] hasKeysIds;
     public int unlockedByKey = -1;
     public int previousId;
