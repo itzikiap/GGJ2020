@@ -30,14 +30,19 @@ public class GameManager : MonoBehaviour
     }
 
     void Update () {
+        bool scrolled = true;
         if(Input.GetKeyDown(KeyCode.A)){
             this.cm.SeekBy(-1);
             this.CheckForKey();
         }
         else if(Input.GetKeyDown(KeyCode.D)){
             this.cm.SeekBy(1);
+        } else {
+            scrolled = false;
         }
-        else if(Input.GetKeyDown(KeyCode.Alpha1)){
+
+        bool options = true;
+        if(Input.GetKeyDown(KeyCode.Alpha1)){
             this.cm.ChangeActiveOption(0);
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2)){
@@ -48,9 +53,16 @@ public class GameManager : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.Alpha4)){
             this.cm.ChangeActiveOption(3);
+        } else {
+            options = false;
         }
 
-        this.CallScrollEvent();
+        if (scrolled) {
+            this.CallScrollEvent();
+        }
+        if (options) {
+            this.CallChangeOptionsEvent();
+        }
     }
 
     private void CheckForKey() {
