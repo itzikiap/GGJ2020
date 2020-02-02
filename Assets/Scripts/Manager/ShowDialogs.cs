@@ -50,13 +50,11 @@ public class ShowDialogs : MonoBehaviour
             Destroy(go);
         }
         alreadyShowed = new List<GameObject>();
-        int i = FIRST_NUMBER_FETCH;
         Sentence[] chain = cm.GetConversationChain(FIRST_NUMBER_FETCH);
+        int i = chain.Length - 1;
         foreach(Sentence s in chain)
         {
-                        Debug.Log(i+ "," +  JsonUtility.ToJson(s));
-
-            if (true) {
+            if (i == 0) {
                 if(s.speaker == 0) {
                     addSentenceSpeaker(s.text);
                 }
@@ -77,8 +75,6 @@ public class ShowDialogs : MonoBehaviour
     {
         foreach(Sentence s in cm.GetConversationChain(FIRST_NUMBER_FETCH))
         {
-
-
             if(s.speaker == 0) {
                 addSentenceSpeaker(s.text);
             }else if(s.speaker == 1)
