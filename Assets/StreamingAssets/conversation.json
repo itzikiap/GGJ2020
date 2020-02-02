@@ -4,6 +4,7 @@
       "id": 30,
       "text": "...",
       "tone": 0,
+      "bubble": "1A",
       "speaker": 1,
       "nextOptionsIds": [0, 8, 23],
       "hasKeysIds": []
@@ -12,6 +13,7 @@
       "id": 0,
       "text": "Your mother was a nice person",
       "tone": 0,
+      "bubble": "1A",
       "speaker": 1,
       "nextOptionsIds": [1,5,10],
       "hasKeysIds": []
@@ -20,6 +22,7 @@
       "id": 1,
       "text": "Is that so? Then how do you explain all the fighting you and mom had the last few months?",
       "tone": 0,
+      "bubble": "2A",
       "speaker": 2,
       "nextOptionsIds": [2,15,20, 41],
       "hasKeysIds": []
@@ -28,6 +31,7 @@
       "id": 2,
       "text": "Look... we never fought about you. We have always loved you!",
       "tone": 0,
+      "bubble": "1A",
       "speaker": 1,
       "nextOptionsIds": [3,22],
       "hasKeysIds": []
@@ -36,6 +40,7 @@
       "id": 3,
       "text": "Come on dad, do you really expect me to believe that? I know you're trying to avoid the topic.",
       "tone": 0,
+      "bubble": "2A",
       "speaker": 2,
       "nextOptionsIds": [4],
       "hasKeysIds": []
@@ -44,14 +49,16 @@
       "id": 4,
       "text": "Or will you finally tell me what really happened last summer?",
       "tone": 0,
+      "bubble": "2B",
       "speaker": 2,
-      "nextOptionsIds": [26],
+      "nextOptionsIds": [27],
       "hasKeysIds": [8]
     },
     {
       "id": 5,
       "text": "It's just so sad... . I barely remember the last time we were happy together.",
       "tone": 0,
+      "bubble": "1A",
       "speaker": 2,
       "nextOptionsIds": [6],
       "hasKeysIds": [],
@@ -61,6 +68,7 @@
       "id": 6,
       "text": "That was during the summer vacation in Italy, right?",
       "tone": 0,
+      "bubble": "1A",
       "speaker": 1,
       "nextOptionsIds": [7, 45],
       "hasKeysIds": []
@@ -71,6 +79,7 @@
       "text": "Yes... . And after that mom was stuffing us with pasta every weekend. You hated it.",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2A",
       "nextOptionsIds": [31],
       "hasKeysIds": [1]
     },
@@ -79,6 +88,7 @@
       "text": "You mother loved cooking.",
       "tone": 0,
       "speaker": 1,
+      "bubble": "1A",
       "nextOptionsIds": [9],
       "hasKeysIds": [2],
       "unlockedByKey" : 1
@@ -89,6 +99,7 @@
       "text": "Seriously dad? Is that all you have to say about her?",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2B",
       "nextOptionsIds": [35],
       "hasKeysIds": []
     },
@@ -97,6 +108,7 @@
       "text": "The last nice thing she did for me was when she stayed with me at the hopsital.",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2A",
       "nextOptionsIds": [11],
       "hasKeysIds": [],
       "unlockedByKey" : 2
@@ -106,6 +118,7 @@
       "text": "When was that?",
       "tone": 0,
       "speaker": 1,
+      "bubble": "1A",
       "nextOptionsIds": [12],
       "hasKeysIds": []
     },
@@ -113,6 +126,7 @@
       "id": 12,
       "text": "When I tried cooking on my own and the microwave exploded! All you did was standing there and laughing at me.",
       "tone": 0,
+      "bubble": "2B",
       "speaker": 2,
       "nextOptionsIds": [13],
       "hasKeysIds": []
@@ -121,6 +135,7 @@
       "id": 13,
       "text": "I don't recall...",
       "tone": 0,
+      "bubble": "1A",
       "speaker": 1,
       "nextOptionsIds": [14],
       "hasKeysIds": []
@@ -130,6 +145,7 @@
       "text": "Are you serious?! I was injured! I even had to get a surgery!",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2B",
       "nextOptionsIds": [36],
       "hasKeysIds": [3]
     },
@@ -138,6 +154,7 @@
       "text": "There is something we've kept secret from you. There was a surgery long time ago...",
       "tone": 0,
       "speaker": 1,
+      "bubble": "1B",
       "nextOptionsIds": [16],
       "hasKeysIds": [],
       "unlockedByKey" : 3
@@ -148,6 +165,7 @@
       "text": "So what?",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2D",
       "nextOptionsIds": [17],
       "hasKeysIds": []
     },
@@ -156,6 +174,7 @@
       "text": "I am your true mother. I had a sex change right after your brith.",
       "tone": 0,
       "speaker": 1,
+      "bubble": "4S",
       "nextOptionsIds": [18],
       "hasKeysIds": [4]
     },
@@ -164,6 +183,7 @@
       "text": "What the hell? What does that mean...",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2B",
       "nextOptionsIds": [19],
       "hasKeysIds": []
     },
@@ -172,6 +192,7 @@
       "text": "Dad... mom ? Who is my real father?",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2D",
       "nextOptionsIds": [32],
       "hasKeysIds": [6]
     },
@@ -180,6 +201,7 @@
       "text": "Ok, it seems I have to come clear now: I had sex with a lot of women during our marriage.",
       "tone": 0,
       "speaker": 1,
+      "bubble": "1A",
       "nextOptionsIds": [21],
       "hasKeysIds": [],
       "unlockedByKey" : 4
@@ -190,6 +212,7 @@
       "text": "You cheated on mom!? You've been lying to us all this time? You're horrible!",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2C",
       "nextOptionsIds": [34],
       "hasKeysIds": [5]
     },
@@ -198,6 +221,7 @@
       "text": "YOU loved me? How can you say that when you abandoned me after mum died?",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2D",
       "nextOptionsIds": [33],
       "hasKeysIds": [6],
       "unlockedByKey" : 5
@@ -208,6 +232,7 @@
       "text": "After all these years, I can still not forgive her for going with that guy.",
       "tone": 0,
       "speaker": 1,
+      "bubble": "1D",
       "nextOptionsIds": [24],
       "hasKeysIds": [],
       "unlockedByKey" : 6
@@ -217,14 +242,16 @@
       "text": "I think we're better off without her.",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2A",
       "nextOptionsIds": [25],
       "hasKeysIds": []
     },
     {
       "id": 25,
-      "text": "That's mean, but I get what you mean. At least we have each other.",
+      "text": "That's mean, but I get what you want to say. At least we have each other.",
       "tone": 0,
       "speaker": 1,
+      "bubble": "1A",
       "nextOptionsIds": [26],
       "hasKeysIds": []
     },
@@ -233,6 +260,7 @@
       "text": "How about some ice cream?",
       "tone": 0,
       "speaker": 2,
+      "bubble": "2B",
       "nextOptionsIds": [36],
       "hasKeysIds": []
     },
