@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 278803605}
   - component: {fileID: 278803604}
   - component: {fileID: 278803606}
+  - component: {fileID: 278803607}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -407,6 +408,23 @@ MonoBehaviour:
   SpeakerDialog: {fileID: 4607213765029651653, guid: 55f59d6d3dc07fe43b8cdc68b12cb5cc,
     type: 3}
   ParentDialogContainer: {fileID: 1847503041}
+--- !u!114 &278803607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278803603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1126d9e2bd6ed2349b9bad0f1a4115f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dot: {fileID: 7858053389389589034, guid: fd21013275d06e64786b4e57f5f2eca7, type: 3}
+  line: {fileID: 145671687}
+  optionsContainer: {fileID: 4815002954376774117, guid: 527122b2d553a1e4a8c28f45455c9949,
+    type: 3}
+  dots: []
 --- !u!1 &481073750
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +886,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2006081618}
-  - component: {fileID: 2006081619}
   m_Layer: 5
   m_Name: TimeLine
   m_TagString: Untagged
@@ -896,18 +913,3 @@ RectTransform:
   m_AnchoredPosition: {x: -270, y: -300}
   m_SizeDelta: {x: 700, y: 97.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2006081619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006081617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1126d9e2bd6ed2349b9bad0f1a4115f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dot: {fileID: 7858053389389589034, guid: fd21013275d06e64786b4e57f5f2eca7, type: 3}
-  line: {fileID: 145671687}
-  dots: []

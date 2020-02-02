@@ -11,8 +11,14 @@ public class GameManager : MonoBehaviour
     public event GameManagerEventHandler ShowDialogsEvent; //shows all dialogs in the screen
     public event GameManagerEventHandler ScrollEvent;//simulates the scrolling in the timeline
     public event GameManagerEventHandler ShowKeysEvent;//shows all the keys available for the current dot
+    
     public event GameManagerEventHandler ChangeOptionEvent;//changes another option
+    //Timeline Events
+    public event GameManagerEventHandler ShowDotEvent;//shows a dot in the timeline
+    public event GameManagerEventHandler ShowOptionsEvent; //shows the graphic of options in the timeline
+
     public event GameManagerEventHandler ObtainedKeysEvent;//when the user gets to a sentence that has a key
+    
     public event GameManagerEventHandler PauseEventEvent;
         
     private ConversationManager cm;
@@ -71,6 +77,8 @@ public class GameManager : MonoBehaviour
         }
         this.CallObtainedKeysEvent();
     }
+
+
 
     public void CallExitGameEvent()
     {
