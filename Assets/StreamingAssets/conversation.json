@@ -6,6 +6,7 @@
       "tone": 0,
       "bubble": "1A",
       "speaker": 1,
+      "audio": 1,
       "nextOptionsIds": [0, 8, 23],
       "hasKeysIds": []
     },
@@ -15,6 +16,7 @@
       "tone": 0,
       "bubble": "1A",
       "speaker": 1,
+      "audio": 1,
       "nextOptionsIds": [1,5,10],
       "hasKeysIds": []
     },

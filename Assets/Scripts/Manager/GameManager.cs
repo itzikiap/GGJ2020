@@ -43,9 +43,6 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.A)){
             this.cm.SeekBy(-1);
             this.CheckForKey();
-            
-            musicManager.PlaySound(MusicManager.BAD_ENDING);
-            musicManager.SetLoop();
         }
         else if(Input.GetKeyDown(KeyCode.D)){
             this.cm.SeekBy(1);

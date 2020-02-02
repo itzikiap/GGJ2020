@@ -12,6 +12,8 @@ public class MusicManager : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
 
+    private int playing;
+
    
     public const int INTRO = 0;
     public const int SAD = 1;
@@ -26,21 +28,28 @@ public class MusicManager : MonoBehaviour
     public const int BAD_ENDING = 10;
     public const int HAPPY_MEMORY_A = 11;
     public const int HAPPY_MEMORY_B = 12;
-    public const int GOOD_ENDING = 11;
+    public const int GOOD_ENDING = 13;
+    public const int WEIRD_ENDING = 14;
 
 
     public void PlaySound(int sound_constant)
     {
-        audioSource.clip = audios[sound_constant];
-        audioSource.Play();
+        if (sound_constant != playing)
+        {
+            audioSource.clip = audios[sound_constant];
+            audioSource.Play();
+        }
+
+        
+        playing = sound_constant;
     }
 
     /**
      * Loop is set to false by default
      */
-    public void SetLoop()
+    public void SetLoop(bool loop = true)
     {
-        audioSource.loop = true;
+        audioSource.loop = loop;
     }
 
 
