@@ -27,6 +27,9 @@ public class CharacterManager : MonoBehaviour
     public const int UPSET = 6;
     public const int SAD = 7;
     public const int CRYING = 8;
+    public const int LIZARD = 9;
+    public const int ROBOT = 10;
+    public const int WOMAN = 11;
 
     public void OnEnable()
     {
