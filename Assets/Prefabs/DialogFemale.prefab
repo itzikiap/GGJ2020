@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.93, y: 1.0489044}
-  m_SizeDelta: {x: -29.86, y: -2.635}
+  m_AnchoredPosition: {x: 10.08, y: 0.08}
+  m_SizeDelta: {x: -33.55, y: -4.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2818316722713030828
 CanvasRenderer:
@@ -63,7 +63,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hello World Hello World Hello World Hello World
+  m_text: 'Hello World Hello World Hello World Hello World Hello World Hello World
+    Hello World Hello World
+
+    Hello World Hello World Hello World Hello World
+
 
 '
   m_isRightToLeft: 0
@@ -102,7 +106,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 257
-  m_characterSpacing: 0
+  m_characterSpacing: 10
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -111,7 +115,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 144
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -135,12 +139,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2818316722713030829}
-    characterCount: 48
+    characterCount: 145
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 8
+    spaceCount: 25
+    wordCount: 24
     linkCount: 0
-    lineCount: 1
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
