@@ -59,6 +59,7 @@ public class ShowDialogs : MonoBehaviour
             if (true) {
                 if(s.speaker == 0) {
                     addSentenceSpeaker(s.text);
+                   
                 }
                 else if(s.speaker == 1)
                 {

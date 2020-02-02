@@ -49,7 +49,7 @@ public class TimeLineManager : MonoBehaviour
         optionsVisual.transform.localScale = new Vector3(1, 1, 1);
         optionsVisual.transform.localPosition = new Vector3(0, 0, 0);
 
-        int numberOfOptions = gm.conversationManager.GetCurrentSentence().nextOptionsIds.Length;
+        int numberOfOptions = gm.conversationManager.GetOptionalNextSentences().Length;
         
         for(int i = 1; i <= numberOfOptions; i++)
         {

@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public event GameManagerEventHandler PauseEventEvent;
         
     private ConversationManager cm;
+    private MusicManager musicManager;
+    
     public ConversationManager conversationManager { get{
         if (this.cm == null) {
             this.cm = new ConversationManager();
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         CallShowDialogsEvent();
+        musicManager = GetComponent<MusicManager>();
     }
 
     void Update () {
@@ -40,6 +43,9 @@ public class GameManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.A)){
             this.cm.SeekBy(-1);
             this.CheckForKey();
+            
+            musicManager.PlaySound(MusicManager.BAD_ENDING);
+            musicManager.SetLoop();
         }
         else if(Input.GetKeyDown(KeyCode.D)){
             this.cm.SeekBy(1);
