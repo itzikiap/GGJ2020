@@ -40,16 +40,16 @@
       "id": 3,
       "text": "Come on dad, do you really expect me to believe that? I know you're trying to avoid the topic.",
       "tone": 0,
-      "bubble": "2A",
+      "bubble": "2B",
       "speaker": 2,
       "nextOptionsIds": [4],
       "hasKeysIds": []
     },
     {
       "id": 4,
-      "text": "Or will you finally tell me what really happened last summer?",
+      "text": "Or will you finally tell me what really happened last summer?!",
       "tone": 0,
-      "bubble": "2B",
+      "bubble": "2C",
       "speaker": 2,
       "nextOptionsIds": [27],
       "hasKeysIds": []
