@@ -71,7 +71,7 @@ public class ConversationManager : IConversationManager
         while (i < count && !leaf) {
             link = FindSentenceById(nextId);
             leaf = IsSentenceLeaf(link);
-            // Debug.Log(i+ "," + count+ "," + leaf+ "," + JsonUtility.ToJson(link));
+            Debug.Log(i+ "," + count+ "," + leaf+ "," + JsonUtility.ToJson(link));
             if (!leaf) nextId = link.nextOptionsIds[link.activeIndex];
             chain.Add(link);
             i ++;
@@ -117,7 +117,9 @@ public class ConversationManager : IConversationManager
     }
 
     public void ChangeActiveOption(int index) {
-        currentSentence.activeIndex = index;
+        if (currentSentence.nextOptionsIds.Length <= index) {
+            currentSentence.activeIndex = index;
+        }
     }
     // -----------------------------------
 }
