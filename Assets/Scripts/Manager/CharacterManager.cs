@@ -44,7 +44,14 @@ public class CharacterManager : MonoBehaviour
     }
 
     private void showSentences() {
-        
+        Sentence[] chain = cm.GetConversationChain(2);
+        Sentence s = chain[chain.Length - 1];
+        if (s.expressions[0]) {
+            changeDaughterExpression(s.expressions[0]);
+        }
+        if (s.expressions[1]) {
+            changeFatherExpression(s.expressions[1]);
+        }
     }
     public void changeFatherExpression(int expression_const)
     {
