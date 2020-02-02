@@ -51,11 +51,11 @@ public class ShowDialogs : MonoBehaviour
 
     public void OnEnable()
     {
-        gameManagerRef = GetComponent<GameManager>();
-        cm = gameManagerRef.conversationManager;
-        gameManagerRef.ShowDialogsEvent += initialize; 
-        gameManagerRef.ScrollEvent += showSentences;
-        gameManagerRef.ChangeOptionEvent += showSentences;
+        this.gameManagerRef = GetComponent<GameManager>();
+        this.cm = gameManagerRef.conversationManager;
+        this.gameManagerRef.ShowDialogsEvent += initialize; 
+        this.gameManagerRef.ScrollEvent += showSentences;
+        this.gameManagerRef.ChangeOptionEvent += showSentences;
     }
     public void OnDisable()
     {
