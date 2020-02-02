@@ -34,6 +34,7 @@ public class ShowDialogs : MonoBehaviour
         cm = gameManagerRef.conversationManager;
         gameManagerRef.ShowDialogsEvent += initialize; 
         gameManagerRef.ScrollEvent += showSentences;
+        gameManagerRef.ChangeOptionEvent += showSentences;
     }
     public void OnDisable()
     {
@@ -49,26 +50,35 @@ public class ShowDialogs : MonoBehaviour
             Destroy(go);
         }
         alreadyShowed = new List<GameObject>();
-
-        foreach(Sentence s in cm.GetConversationChain(FIRST_NUMBER_FETCH))
+        int i = FIRST_NUMBER_FETCH;
+        Sentence[] chain = cm.GetConversationChain(FIRST_NUMBER_FETCH);
+        foreach(Sentence s in chain)
         {
-            if(s.speaker == 0) {
-                addSentenceSpeaker(s.text);
-            }else if(s.speaker == 1)
-            {
-                addSentenceMale(s.text);
+                        Debug.Log(i+ "," +  JsonUtility.ToJson(s));
+
+            if (true) {
+                if(s.speaker == 0) {
+                    addSentenceSpeaker(s.text);
+                }
+                else if(s.speaker == 1)
+                {
+                    addSentenceMale(s.text);
+                }
+                else
+                {
+                    addSentenceFemale(s.text);
+                }
             }
-            else
-            {
-                addSentenceFemale(s.text);
-            }
-        }
+            i--;
+        }     
         moveUp(FIRST_NUMBER_FETCH);
     }
     public IEnumerator showSentencesAnimation()
     {
         foreach(Sentence s in cm.GetConversationChain(FIRST_NUMBER_FETCH))
         {
+
+
             if(s.speaker == 0) {
                 addSentenceSpeaker(s.text);
             }else if(s.speaker == 1)
