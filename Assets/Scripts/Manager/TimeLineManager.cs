@@ -23,7 +23,7 @@ public class TimeLineManager : MonoBehaviour
         
         // gm.ShowDotEvent += addDot;
         gm.ScrollEvent += onScrollEvent;
-
+        gm.ChangeOptionEvent += onScrollEvent;
         showing = new List<GameObject>();
     }
 
@@ -39,7 +39,8 @@ public class TimeLineManager : MonoBehaviour
         if (numberOfOptions > 1)
         {
             addOptions(numberOfOptions);
-            // addDot(150, gm.conversationManager.GetSentenceInIndex(gm.conversationManager.GetIndex()-2).activeIndex.ToString());
+            int index = gm.conversationManager.GetSentenceInIndex(gm.conversationManager.GetIndex()).activeIndex + 1;
+            addDot(150, index.ToString());
         }
     }
 
