@@ -28,7 +28,7 @@ public interface IConversationManager {
      * If so, checks to see if the player already got the key.
      * Return a list with sentences without a key, or with an obtained key
      */
-    Sentence[] GetOptionalNextSentences();
+    Sentence[] GetOptionalNextSentences(Sentence link = null);
     /**
      *  Return true if current sentence by the tracking index is a leaf
      * I.E Don't have any Next Options (Not even hidden by key)
