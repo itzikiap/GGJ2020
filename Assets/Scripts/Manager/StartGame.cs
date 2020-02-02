@@ -20,6 +20,5 @@ public class StartGame : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-   
 
 }

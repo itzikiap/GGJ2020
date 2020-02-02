@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
         bool scrolled = true;
         if(Input.GetKeyDown(KeyCode.A)){
             this.cm.SeekBy(-1);
+            this.CheckForKey();
         }
         else if(Input.GetKeyDown(KeyCode.D)){
             this.cm.SeekBy(1);
