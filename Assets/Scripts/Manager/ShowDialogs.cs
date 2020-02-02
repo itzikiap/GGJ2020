@@ -57,11 +57,12 @@ public class ShowDialogs : MonoBehaviour
     public void OnDisable()
     {
         gameManagerRef.ShowDialogsEvent -= initialize;
+        gameManagerRef.ScrollEvent -= showSentences;
+        gameManagerRef.ChangeOptionEvent -= showSentences;
     }
     public void initialize()
     {
         initializeBubbles();
-        showSentences();
     }
 
     private void initializeBubbles()
@@ -107,11 +108,9 @@ public class ShowDialogs : MonoBehaviour
         Sentence[] chain = cm.GetConversationChain(FIRST_NUMBER_FETCH);
         int i = chain.Length - 1;
         foreach(Sentence s in chain)
-        {
-            addSentenceSpeaker(s.text, s.bubble);
-            
-/*
+        {          
             if (i == 0) {
+                addSentenceSpeaker(s.text, s.bubble);
                 if(s.speaker == 0) {
                     addSentenceSpeaker(s.text, s.bubble);
                 }
@@ -124,7 +123,6 @@ public class ShowDialogs : MonoBehaviour
                     addSentenceFemale(s.text, s.bubble);
                 }
             }
-*/
             i--;
         }     
         moveUp(FIRST_NUMBER_FETCH);

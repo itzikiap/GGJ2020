@@ -56,7 +56,6 @@ public class ConversationManager : IConversationManager
     public void LoadConversationFromFile(string conversationFileName) {
         jsonRawData = File.ReadAllText(path + '/' + conversationFileName);
         conversation = JsonUtility.FromJson<DialogData>(jsonRawData);
-    //    Debug.Log(JsonUtility.ToJson(conversation));
         SeekTo(0);
     }
     public int GetIndex() {
