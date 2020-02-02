@@ -30,6 +30,9 @@ public class ShowDialogs : MonoBehaviour
 
     private List<GameObject> alreadyShowed = new List<GameObject>();
 
+    private MusicManager musicManager;
+
+    
     private Sprite BUBBLE_1A,
         BUBBLE_2A,
         BUBBLE_1B,
@@ -60,6 +63,7 @@ public class ShowDialogs : MonoBehaviour
     }
     public void initialize()
     {
+        musicManager = GetComponent<MusicManager>();
         initializeBubbles();
         showSentences();
     }
@@ -108,7 +112,7 @@ public class ShowDialogs : MonoBehaviour
         int i = chain.Length - 1;
         foreach(Sentence s in chain)
         {
-            addSentenceSpeaker(s.text, s.bubble);
+            addSentenceSpeaker(s /*s.text, s.bubble, s.audio*/);
             
 /*
             if (i == 0) {
@@ -134,14 +138,14 @@ public class ShowDialogs : MonoBehaviour
         foreach(Sentence s in cm.GetConversationChain(FIRST_NUMBER_FETCH))
         {
             if(s.speaker == 0) {
-                addSentenceSpeaker(s.text, s.bubble);
+                addSentenceSpeaker(s);
             }else if(s.speaker == 1)
             {
-                addSentenceMale(s.text, s.bubble);
+                addSentenceMale(s);
             }
             else
             {
-                addSentenceFemale(s.text, s.bubble);
+                addSentenceFemale(s);
             }
             moveUp(1);
             yield return new WaitForSeconds(1f);
@@ -158,26 +162,25 @@ public class ShowDialogs : MonoBehaviour
             i++;
         }
     }
-    public void addSentenceSpeaker(string text, string bubble)
+    public void addSentenceSpeaker(Sentence s /*string text, string bubble, int audio*/)
     {
-        addSentence(SpeakerDialog, text, bubble, 0);
+        addSentence(SpeakerDialog, s, 0);
     }
-    public void addSentenceFemale(string text, string bubble)
+    public void addSentenceFemale(Sentence s)
     {
-        addSentence(FemaleDialog, text, bubble, 0);
+        addSentence(FemaleDialog, s, 0);
     }
-    public void addSentenceMale(string text, string bubble)
+    public void addSentenceMale(Sentence s)
     {
-        addSentence(MaleDialog, text, bubble, 0);
+        addSentence(MaleDialog, s, 0);
     }
 
-    private void addSentence(GameObject type, string text, string bubble, int position) {
+    private void addSentence(GameObject type, Sentence s, int position) {
         GameObject dialog = Instantiate(type, Vector3.zero, Quaternion.identity) as GameObject;
-        var cpts = dialog.GetComponents(typeof(Component));
         Sprite sprite = null;
         try
         {
-             sprite = bubbleSprites[bubble];
+             sprite = bubbleSprites[s.bubble];
         }
         catch (KeyNotFoundException)
         {
@@ -187,8 +190,10 @@ public class ShowDialogs : MonoBehaviour
         dialog.transform.SetParent(ParentDialogContainer.transform);
         dialog.GetComponent<RectTransform>().localPosition = new Vector3(-100, 100, 0);
         dialog.GetComponent<RectTransform>().localScale = new Vector3(2.5f, 5, 1);
-        dialog.GetComponentInChildren<TextMeshProUGUI>().text = text;
+        dialog.GetComponentInChildren<TextMeshProUGUI>().text = s.text;
         alreadyShowed.Add(dialog);
+        musicManager.PlaySound(s.audio);
+        musicManager.SetLoop(s.audioloop);
     }
     
     public static Texture2D textureFromSprite(Sprite sprite)

@@ -22,8 +22,10 @@ public class Sentence {
     public string bubble = "1A";
     public string text;
     public int speaker;
+    public int audio = 1;
+    public bool audioloop = false;
     public int[] hasKeysIds;
-    public int unlockedByKeyId;
+    public int unlockedByKey = -1;
     public int previousId;
     public int[] nextOptionsIds;
     public int activeIndex;

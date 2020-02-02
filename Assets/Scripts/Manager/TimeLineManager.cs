@@ -33,7 +33,6 @@ public class TimeLineManager : MonoBehaviour
         Destroy(showing);
         var dotInitiliazed = Instantiate(dot, Vector3.zero, Quaternion.identity);
         dotInitiliazed.transform.SetParent(line.transform);
-
         
         showing = dotInitiliazed;
     }
@@ -50,12 +49,13 @@ public class TimeLineManager : MonoBehaviour
         optionsVisual.transform.localPosition = new Vector3(0, 0, 0);
 
         int numberOfOptions = gm.conversationManager.GetOptionalNextSentences().Length;
-        
-        for(int i = 1; i <= numberOfOptions; i++)
+        if (numberOfOptions > 1)
         {
-            optionsVisual.GetComponentInChildren<TextMeshProUGUI>().text += " " + i;
+            for(int i = 1; i <= numberOfOptions; i++)
+            {
+                optionsVisual.GetComponentInChildren<TextMeshProUGUI>().text += " " + i;
+            }
         }
-
         showing = optionsVisual;
     }
     
