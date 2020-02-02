@@ -30,21 +30,33 @@ public class TimeLineManager : MonoBehaviour
     
     public void addDot()
     {
+        Destroy(showing);
         var dotInitiliazed = Instantiate(dot, Vector3.zero, Quaternion.identity);
-        dotInitiliazed.transform.SetParent(line.transform);     
+        dotInitiliazed.transform.SetParent(line.transform);
+
+        
+        showing = dotInitiliazed;
     }
+
+    private GameObject showing; //showing object on the timeline
 
     public void addOptions()
     {
+        Destroy(showing);
+        
         var optionsVisual = Instantiate(optionsContainer, Vector3.zero, Quaternion.identity);
         optionsVisual.transform.SetParent(line.transform);
+        optionsVisual.transform.localScale = new Vector3(1, 1, 1);
+        optionsVisual.transform.localPosition = new Vector3(0, 0, 0);
 
         int numberOfOptions = gm.conversationManager.GetCurrentSentence().nextOptionsIds.Length;
+        
         for(int i = 1; i <= numberOfOptions; i++)
         {
             optionsVisual.GetComponentInChildren<TextMeshProUGUI>().text += " " + i;
         }
-       
+
+        showing = optionsVisual;
     }
     
 }
