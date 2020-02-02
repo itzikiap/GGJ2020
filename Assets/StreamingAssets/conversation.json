@@ -177,7 +177,7 @@
       "tone": 0,
       "speaker": 2,
       "bubble": "2B",
-      "nextOptionsIds": [36],
+      "nextOptionsIds": [47],
       "expression" : [3, 1],
       "hasKeysIds": [3]
     },
@@ -406,6 +406,17 @@
       "bubble": "NA",
       "nextOptionsIds": [],
       "expression" : [6, 3],
+      "hasKeysIds": []
+    },
+    {
+      "id": 47,
+      "text": "Not good. He should take her more serious.",
+      "audio":2,
+      "tone": 0,
+      "speaker": 0,
+      "bubble": "NA",
+      "nextOptionsIds": [],
+      "expression" : [3, 1],
       "hasKeysIds": []
     },
     {
