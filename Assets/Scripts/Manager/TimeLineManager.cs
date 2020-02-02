@@ -13,20 +13,33 @@ public class TimeLineManager : MonoBehaviour
     private GameObject optionsContainer;
     private GameManager gm;
 
+
+    private List<GameObject> showing; //showing object on the timeline
+
+
     private void OnEnable()
     {
         gm = GetComponent<GameManager>();
         
         // gm.ShowDotEvent += addDot;
         gm.ScrollEvent += onScrollEvent;
+
+        showing = new List<GameObject>();
     }
 
     void onScrollEvent() {
+        foreach (GameObject go in showing)
+        {
+            Destroy(go);
+        }
+        showing = new List<GameObject>();
+
         addDot();
         int numberOfOptions = gm.conversationManager.GetOptionalNextSentences().Length;
         if (numberOfOptions > 1)
         {
             addOptions(numberOfOptions);
+            // addDot(150, gm.conversationManager.GetSentenceInIndex(gm.conversationManager.GetIndex()-2).activeIndex.ToString());
         }
     }
 
@@ -36,22 +49,17 @@ public class TimeLineManager : MonoBehaviour
         gm.ScrollEvent -= onScrollEvent;
     }
     
-    public void addDot()
+    public void addDot(int pos = 0, string text = "")
     {
-        Destroy(showing);
         var dotInitiliazed = Instantiate(dot, Vector3.zero, Quaternion.identity);
         dotInitiliazed.transform.SetParent(line.transform);
-        dotInitiliazed.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
-        dotInitiliazed.transform.localPosition = new Vector3(0, 0, 0);
-        showing = dotInitiliazed;
+        dotInitiliazed.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+        dotInitiliazed.transform.localPosition = new Vector3(0 + pos, 0, 0);
+        dotInitiliazed.GetComponentInChildren<TextMeshProUGUI>().text = text;
+        showing.Add(dotInitiliazed);
     }
-
-    private GameObject showing; //showing object on the timeline
-
     public void addOptions(int numberOfOptions)
     {
-        Destroy(showing);
-        
         var optionsVisual = Instantiate(optionsContainer, Vector3.zero, Quaternion.identity);
         optionsVisual.transform.SetParent(line.transform);
         optionsVisual.transform.localScale = new Vector3(1, 1, 1);
@@ -62,7 +70,7 @@ public class TimeLineManager : MonoBehaviour
         {
             optionsVisual.GetComponentInChildren<TextMeshProUGUI>().text += " " + i;
         }
-        showing = optionsVisual;
+        showing.Add(optionsVisual);
     }
     
 }

@@ -53,7 +53,7 @@ public class CharacterManager : MonoBehaviour
             if (s.expression.Length > 0) {
                 changeDaughterExpression(s.expression[0]);
             }
-            if (s != null && s.expression != null && s.expression.Length > 1) {
+            if (s.expression.Length > 1) {
                 changeFatherExpression(s.expression[1]);
             }
         }
