@@ -31,6 +31,7 @@ public class MusicManager : MonoBehaviour
 
     public void PlaySound(int sound_constant)
     {
+       
         audioSource.clip = audios[sound_constant];
         audioSource.Play();
     }
