@@ -52,7 +52,7 @@
       "bubble": "2B",
       "speaker": 2,
       "nextOptionsIds": [27],
-      "hasKeysIds": [8]
+      "hasKeysIds": []
     },
     {
       "id": 5,
@@ -278,7 +278,7 @@
       "tone": 0,
       "speaker": 0,
       "nextOptionsIds": [29],
-      "hasKeysIds": []
+      "hasKeysIds": [8]
     },
     {
       "id": 29,
