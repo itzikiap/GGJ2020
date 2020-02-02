@@ -7,7 +7,7 @@
       "tone": 0,
       "bubble": "1A",
       "speaker": 1,
-      "nextOptionsIds": [0, 8, 23],
+      "nextOptionsIds": [0, 50, 23],
       "expression" : [8, 8],
       "hasKeysIds": []
     },
@@ -102,6 +102,17 @@
       "hasKeysIds": [1]
     },
     {
+      "id": 50,
+      "text": "Can you tell me something?",
+      "audio":1,
+      "tone": 0,
+      "speaker": 1,
+      "bubble": "1A",
+      "nextOptionsIds": [8],
+      "expression" : [6, 5],
+      "unlockedByKey" : 1
+    },
+    {
       "id": 8,
       "text": "Now that your mother is dead, who is going to cook?",
       "audio":1,
@@ -110,9 +121,7 @@
       "bubble": "1A",
       "nextOptionsIds": [9],
       "hasKeysIds": [2],
-      "expression" : [6, 5],
-      "unlockedByKey" : 1
-
+      "expression" : [6, 5]
     },
     {
       "id": 9,
